@@ -1,0 +1,248 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+  /* ! ======================== CUSTOMERS ======================== */
+
+  /* ! ========================== FOOTER ========================= */
+  .footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/*? ============================= Tablet ========================  */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  /* ! =========================== HEADER ======================== */
+
+  .logo {
+    margin-right: 120px;
+  }
+  .nav-links {
+    padding: 0;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .address {
+    display: flex;
+  }
+  .contact-list {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+  }
+  .mob-menu-btn {
+    display: none;
+  }
+  /* ! =========================== HERO  ========================= */
+  .hero {
+    /* max-width: 768px; */
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/fazan_black.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/fazan_black.jpg);
+    }
+  }
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  /* ! ========================== FEATURES  ====================== */
+  .feature-title {
+    text-align-last: left;
+  }
+  .features-list {
+    gap: 72px 24px;
+    align-items: start;
+    justify-content: start;
+  }
+  .feature-container {
+    max-width: 356px;
+  }
+  /* ! ======================== OUR TEAM  ======================== */
+  /* .team-container {
+    max-width: 552px;
+  } */
+  .team-list {
+    gap: 64px 24px;
+  }
+  /* ! ======================== CUSTOMERS ======================== */
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customer {
+    max-width: 168px;
+  }
+  /* ! ========================== FOOTER ========================= */
+  .footer-container {
+    max-width: 552px;
+    align-items: normal;
+    justify-content: start;
+  }
+
+  .logo-n-text {
+    display: block;
+    margin: 0;
+    margin-bottom: 72px;
+    margin-right: 24px;
+  }
+
+  .soc-media-footer {
+    padding: 0;
+    max-width: 208px;
+    display: block;
+    margin: 0;
+  }
+
+  .footer-soc-title {
+    text-align: left;
+  }
+
+  .sub-field-wrap {
+    display: block;
+  }
+
+  .sub-form {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .sub-field {
+    width: 264px;
+  }
+  /*  !-----------------------------modal------------------------- */
+  .modal {
+    max-width: 408px;
+    max-height: 586px;
+  }
+  .modal-form {
+    padding: 72px 24px 24px;
+  }
+}
+/* ? ========================== Desktop ======================== ? */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* ! =========================== HEADER ======================== */
+  .nav-links {
+    padding: 0;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .contact {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .contact-list {
+    flex-direction: row;
+    gap: 40px;
+    padding: 24px 0;
+  }
+  /* ! =========================== HERO  ========================= */
+  .hero {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/HeroImg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/HeroImg.jpg);
+    }
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
+  /* ! ========================== FEATURES  ====================== */
+
+  .features-section {
+    padding: 120px 0;
+  }
+  .icon-bg {
+    display: flex;
+  }
+  .feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .features-list {
+    flex-wrap: nowrap;
+  }
+  .feature-container {
+    max-width: 264px;
+  }
+  .feature {
+    font-weight: 400;
+  }
+  /* ! ======================== PRESENTATION  ==================== */
+  .presentation-section {
+    display: block;
+  } /* ! ======================== OUR TEAM  ======================== */
+  .team {
+    padding: 120px 0;
+  }
+  .team-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  /* ! ======================== CUSTOMERS ======================== */
+  .customers-section {
+    padding: 120px 0;
+  }
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+  /* ! ========================= FOOTER ========================== */
+
+  .footer-container {
+    max-width: 1158px;
+    flex-wrap: nowrap;
+  }
+
+  .logo-n-text {
+    margin-right: 120px;
+  }
+
+  .soc-media-footer {
+    margin-right: 80px;
+  }
+
+  .sub-field {
+    border: 1px solid var(--white-bg);
+  }
+  .sub-field::placeholder {
+    color: var(--white-bg);
+  }
+}
