@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container container">
+        <nav class="nav-links">
+          <a class="logo link" href="./index.html"
+            >Light<span class="accent">room</span>
+          </a>
+        </nav>
+
+        <address class="address">
+          <ul class="list contact-list">
+            <li>
+              <a class="contact link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact link" href="tel:+380990915736"
+                >+380 99 091 57 36</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-container container">
+          <h1 class="hero-title">Fazan x Nike — твій ритм. твій стиль</h1>
+          <button class="button-hero" type="button" data-modal-open>
+            Замовити сумку
+          </button>
+        </div>
+      </section>
+      <!-- Advantages & Features -->
+      <!-- <section class="features-section section">
+        <div class="container">
+          <h2 class="section-title" hidden>Advantages & Features</h2>
+          <ul class="list features-list">
+            <li class="feature-container">
+              <div class="icon-bg">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="title feature-title">Strategy</h3>
+              <p class="feature">
+                Додай ритму кожному кроку з поясною сумкою Fazan, натхненною
+                легендарним стилем Nike. Легка, ергономічна та ультрасучасна —
+                створена для тих, хто не стоїть на місці.
+              </p>
+            </li>
+            <li class="feature-container">
+              <div class="icon-bg">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="title feature-title">Punctuality</h3>
+              <p class="feature">
+                Лаконічний дизайн з фірмовим написом Nike підкреслює динамічний
+                образ, а продумані відділення дозволяють зручно розмістити все
+                необхідне — від телефону до навушників і банківських карток.
+              </p>
+            </li>
+            <li class="feature-container">
+              <div class="icon-bg">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="title feature-title">Diligence</h3>
+              <p class="feature">
+                Міцна тканина з водовідштовхувальним покриттям, надійні
+                блискавки та регульований ремінь забезпечують комфорт при
+                будь-якому способі носіння — на поясі, через плече або по
+                діагоналі на грудях.
+              </p>
+            </li>
+            <li class="feature-container">
+              <div class="icon-bg">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="title feature-title">Fazan x Nike</h3>
+              <p class="feature">
+                Вибір тих, хто цінує свободу, комфорт і впізнаваний стиль.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- ================Presentation pictures================= -->
+
+      <!-- <section class="presentation-section section">
+        <div class="container presentation-container">
+          <h2 class="section-title presentation-title">What are we doing</h2>
+          <ul class="list presentation-pics">
+            <li class="present-pic">
+              <img
+                srcset="./images/monitor-2x.jpg 2x"
+                src="./images/monitor.jpg"
+                alt="Monitor"
+                width="360"
+              />
+            </li>
+            <li class="present-pic">
+              <img
+                srcset="/images/smartphone-2x.jpg 2x"
+                src="./images/smartphone.jpg"
+                alt="Multiple smartphone screens"
+                width="360"
+              />
+            </li>
+            <li class="present-pic">
+              <img
+                srcset="./images/hand-with-phone-2x.jpg 2x"
+                src="./images/hand-with-phone.jpg"
+                alt="Smartphone in hand"
+                width="360"
+              />
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- =================== our products ======================== -->
+
+      <section class="team section">
+        <div class="container team-container">
+          <h2 class="section-title team-title">Наші товари</h2>
+          <ul class="list team-list">
+            <li class="team-member">
+              <img
+                src="./images/red_melanj.jpg"
+                alt="Mark Guerrero photo"
+                width="264"
+                class="member-photo"
+              />
+              <div class="member-container">
+                <h3 class="title member-name">Fazan x Nike</h3>
+                <p class="spec">Червоний меланж</p>
+                <button class="button-hero" type="button" data-modal-open>
+                  Замовити
+                </button>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/fazan_black.jpg"
+                alt="Mark Guerrero photo"
+                width="264"
+                class="member-photo"
+              />
+              <div class="member-container">
+                <h3 class="title member-name">Fazan x Nike</h3>
+                <p class="spec">Чорний меланж</p>
+                <button class="button-hero" type="button" data-modal-open>
+                  Замовити
+                </button>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/blue_melanj.jpg"
+                alt="Mark Guerrero photo"
+                width="264"
+                class="member-photo"
+              />
+              <div class="member-container">
+                <h3 class="title member-name">Fazan x Nike</h3>
+                <p class="spec">Синій меланж</p>
+                <button class="button-hero" type="button" data-modal-open>
+                  Замовити
+                </button>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/red_melanj.jpg"
+                alt="Mark Guerrero photo"
+                width="264"
+                class="member-photo"
+              />
+              <div class="member-container">
+                <h3 class="title member-name">Fazan x Nike</h3>
+                <p class="spec">Червоний меланж</p>
+                <button class="button-hero" type="button" data-modal-open>
+                  Замовити
+                </button>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/red_melanj.jpg"
+                alt="Mark Guerrero photo"
+                width="264"
+                class="member-photo"
+              />
+              <div class="member-container">
+                <h3 class="title member-name">Fazan x Nike</h3>
+                <p class="spec">Червоний меланж</p>
+                <button class="button-hero" type="button" data-modal-open>
+                  Замовити
+                </button>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/red_melanj.jpg"
+                alt="Mark Guerrero photo"
+                width="264"
+                class="member-photo"
+              />
+              <div class="member-container">
+                <h3 class="title member-name">Fazan x Nike</h3>
+                <p class="spec">Червоний меланж</p>
+                <button class="button-hero" type="button" data-modal-open>
+                  Замовити
+                </button>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/red_melanj.jpg"
+                alt="Mark Guerrero photo"
+                width="264"
+                class="member-photo"
+              />
+              <div class="member-container">
+                <h3 class="title member-name">Fazan x Nike</h3>
+                <p class="spec">Червоний меланж</p>
+                <button class="button-hero" type="button" data-modal-open>
+                  Замовити
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section class="section customers-section">
+        <form class="modal-form">
+          <p class="modal-text">
+            Залиште заявку на замовлення, <br />
+            і ми зв'яжемося з вами
+          </p>
+          <label>
+            <span class="label-text">Ім'я</span>
+            <div class="mod-input-wrap">
+              <input type="text" name="mod-name" class="mod-name mod-input" />
+              <svg width="18" height="18" class="modal-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label>
+            <span class="label-text">Варіант кольору</span>
+            <div class="mod-input-wrap">
+              <select
+                name="variants"
+                id="variant-selector"
+                class="variant-selector"
+              >
+                <option value="">Червоний меланж</option>
+                <option value="">Чорний меланж</option>
+                <option value="">Синій меланж</option>
+                <option value="">Чорна</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <svg width="18" height="18" class="modal-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label>
+            <span class="label-text">Номер телефона</span>
+            <div class="mod-input-wrap">
+              <input type="text" name="mod-phone" class="mod-phone mod-input" />
+              <svg width="18" height="18" class="modal-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label>
+            <span class="label-text">Коментар до замовлення</span>
+            <div class="mod-input-wrap">
+              <textarea
+                name="mod-comment"
+                id="modal-comm"
+                class="mod-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox" />
+            <span class="tick-wrap">
+              <svg width="10" height="8" class="checkbox-tick">
+                <use href="./images/icons.svg#icon-tick"></use>
+              </svg>
+            </span>
+            <span class="priv-policy">
+              I accept the terms and conditions of the
+              <a
+                href="https://youtu.be/dQw4w9WgXcQ"
+                rel="noopener noreferrer nofollow"
+                class="privacy-link"
+                target="_blank"
+                >Privacy Policy</a
+              >.
+              <!-- Check this ^ out -->
+            </span>
+          </label>
+          <button type="submit" class="modal-send">Send</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="logo-n-text">
+          <a class="footer-logo link" href="./index.html"
+            >Web<span class="accent-footer">Studio</span></a
+          >
+          <p class="footer-slogan">
+            Increase the flow of customers and sales for your business with
+            digital marketing &amp; growth solutions.
+          </p>
+        </div>
+        <div class="soc-media-footer">
+          <p class="footer-soc-title">Social media</p>
+          <ul class="list soc-list">
+            <li class="soc-media-icon">
+              <a href="" class="footer-soc-link">
+                <svg width="24" height="24" class="soc-link-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media-icon">
+              <a href="" class="footer-soc-link">
+                <svg width="24" height="24" class="soc-link-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media-icon">
+              <a href="" class="footer-soc-link">
+                <svg width="24" height="24" class="soc-link-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media-icon">
+              <a href="" class="footer-soc-link">
+                <svg width="24" height="24" class="soc-link-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-field-wrap">
+          <label for="sub-inp" class="sub-label"
+            ><span class="sub-text">Subscribe</span>
+          </label>
+          <form class="sub-form">
+            <input
+              type="email"
+              id="sub-inp"
+              class="sub-field"
+              placeholder="E-mail"
+              name="sub-input"
+            />
+            <button type="submit" class="sub-button">
+              Subscribe
+              <svg width="24" height="24" class="sub-icon">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
