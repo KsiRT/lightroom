@@ -9,14 +9,19 @@ galleryItems.forEach(item => {
   let intervalId;
   let startX = 0;
 
-  // Клонируем слайды
+ 
+    // Клонируем слайды
   const firstClone = slides[0].cloneNode(true);
   const lastClone = slides[slides.length - 1].cloneNode(true);
+
+  firstClone.classList.add("clone");
+  lastClone.classList.add("clone");
 
   track.appendChild(firstClone); // В конец
   track.insertBefore(lastClone, slides[0]); // В начало
 
-  const allSlides = item.querySelectorAll(".slide");
+  let allSlides = Array.from(item.querySelectorAll(".slide")); // обновляем список
+
 
   track.style.transform = `translateX(-${100 * currentIndex}%)`;
 
@@ -64,19 +69,22 @@ galleryItems.forEach(item => {
   }
 
   // Переход после анимации (обработка клонов)
-  track.addEventListener("transitionend", () => {
-    if (allSlides[currentIndex].isSameNode(firstClone)) {
+   track.addEventListener("transitionend", () => {
+    allSlides = Array.from(item.querySelectorAll(".slide")); // обновим на всякий случай
+
+    if (allSlides[currentIndex] && allSlides[currentIndex].isSameNode(firstClone)) {
       track.style.transition = "none";
       currentIndex = 1;
       track.style.transform = `translateX(-${100 * currentIndex}%)`;
     }
 
-    if (allSlides[currentIndex].isSameNode(lastClone)) {
+    if (allSlides[currentIndex] && allSlides[currentIndex].isSameNode(lastClone)) {
       track.style.transition = "none";
       currentIndex = slides.length;
       track.style.transform = `translateX(-${100 * currentIndex}%)`;
     }
   });
+
 
   // Свайп
   track.addEventListener("touchstart", e => {
