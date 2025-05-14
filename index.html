@@ -49,65 +49,39 @@
     
 
       <h3 class="section-title">Галерея</h3>
-      <ul class="gallery list">
-        <li class="gallery-item">
-          <img class="gallery-img" src="./images/blue_melanj.jpg" alt="Blue melanj " />
-          <p class="gallery-item-name">Синій меланж</p> 
-          <p class="gallery-text">
-            класика, яка завжди в моді. 
-          </p></li>
-        <li class="gallery-item">
-          <img class="gallery-img" src="./images/red_melanj.jpg" alt="Red melanj" />
-          <p class="gallery-item-name">Червоний меланж</p> 
-          <p class="gallery-text">
-             для тих, хто любить виділятися.
-          </p></li>
-        <li class="gallery-item">
-          <img class="gallery-img" src="./images/fazan_black.jpg" alt="Fazan black" />
-          <p class="gallery-item-name">Чорний варіант</p> 
-          <p class="gallery-text">
-             універсальний для будь-якого стилю. 
-          </p></li>
-        <li class="gallery-item">
-          <img class="gallery-img" src="./images/fazan_red.jpg" alt="Fazan red" />
-          <p class="gallery-item-name">Червоний з логотипом</p>  
-          <p class="gallery-text">
-            класичне поэднання червоного та чорного кольорів додає впевненості.
-          </p>
-        </li>
-        <li class="gallery-item">
-          <img class="gallery-img" src="./images/fazan_grey.jpg" alt="Fazan grey" />
-          <p class="gallery-item-name">Сірий з логотипом</p> 
-          <p class="gallery-text">
-             для тих, хто любить стриманість.
-          </p>
-        </li>
-        <li class="gallery-item">
-          <img class="gallery-img" src="./images/fazan_dark_grey.jpg" alt="Fazan dark grey" />
-          <p class="gallery-item-name">Синій меланж</p> 
-          <p class="gallery-text">
-             класика, яка завжди в моді. 
-          </p>
-        </li>
-        <li class="gallery-item">
-          <img class="gallery-img" src="./images/fazan_camo.jpg" alt="Fazan camo" />
-          <p class="gallery-item-name">Білий піксель</p> 
-          <p class="gallery-text">
-          </p>
-        </li>
-      </ul>
-
-      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-        <div class="slider-container">
-  <div class="slider">
-    <div class="slider-track">
-    <img src="./images/fazan_black.jpg" class="slide active" alt="Изображение 1" />
-    <img src="./images/fazan_grey.jpg" class="slide" alt="Изображение 2" />
-    <img src="./images/fazan_camo.jpg" class="slide" alt="Изображение 3" />
+<div class="gallery">
+  <!--* =============== Перший товар ================== -->
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./images/blue_melanj.jpg" class="slide" />
+        <img src="./images/red_melanj.jpg" class="slide" />
+        <img src="./images/fazan_black.jpg" class="slide" />
+      </div>
+      <div class="indicators"></div>
     </div>
-     <div class="indicators"></div>
+    <p class="gallery-item-name">Синій меланж</p>
+    <p class="gallery-text">класика, яка завжди в моді.</p>
   </div>
-  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+  <!--* =============== Другий товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./images/fazan_red.jpg" class="slide" />
+        <img src="./images/fazan_grey.jpg" class="slide" />
+        <img src="./images/fazan_dark_grey.jpg" class="slide" />
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Червоний з логотипом</p>
+    <p class="gallery-text">класичне поєднання червоного та чорного кольорів додає впевненості.</p>
+  </div>
+
+</div>
+
+  
 </div>
 </section>
       <h2>Відгуки</h2>
@@ -147,6 +121,6 @@
       <p>© 2025 Fazan. Всі права захищені.</p>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/gallery-slider.js"></script>
   </body>
 </html>

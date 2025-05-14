@@ -162,6 +162,10 @@ section {
   border-radius: 3px;
   padding-left: 5px;
 }
+
+
+/* ! ==========================ГАЛЕРЕЯ =============== */
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -169,23 +173,105 @@ section {
   justify-content: center;
   margin: 30px 0;
 }
+
 .gallery-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--upper-bg);
-  margin: 10px;
-  text-align: center;
-  min-width: 360px;
-  border-radius: 10px;
-  gap: 15px;
+  background: #ffffff;
+  border-radius: 16px;
   padding: 20px;
+  gap: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 360px;
 }
-.gallery-img {
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-img,
+.slide {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+
+.gallery-item-name::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #ff4b2b;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.gallery-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
   max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 300px; /* Можно настроить по своему */
+  overflow: hidden;
 }
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #ff4b2b;
+}
+
+
+/*! ================Отзывы============== */
 .reviews p,
 .faq p {
   background: #fff;
@@ -234,45 +320,3 @@ section {
 }
 
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  height: 400px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.slider-track {
-  display: flex;
-  height: 100%;
-  transition: transform 0.4s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.indicators {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-}
-
-.indicators .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #ddd;
-  transition: background 0.3s;
-}
-
-.indicators .dot.active {
-  background: #ff4b2b;
-}
