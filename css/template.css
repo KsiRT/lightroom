@@ -72,6 +72,19 @@ body {
   background: linear-gradient(var(--upper-bg), var(--lower-bg));
   color: #fff;
 }
+
+section {
+  padding: 20px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.section-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--fucsia-pink);
+}
+
+
 .header {
   background-color: #1f1f1f;
   color: #fff;
@@ -105,10 +118,15 @@ body {
   font-size: 16px;
   text-align: center;
 }
+
+
+/* * ================ HERO  =======================*/
+
 .hero {
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   color: white;
   text-align: center;
+  padding: 30px 20px;
 }
 .hero-image {
   max-width: 100%;
@@ -138,16 +156,7 @@ body {
   scale: 1.9;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-.section-title {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: var(--fucsia-pink);
-}
+
 .product-features {
   display: flex;
   flex-direction: column;
@@ -171,14 +180,13 @@ section {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin: 30px 0;
 }
 
 .gallery-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  background-color: #f8f9fa;
   border-radius: 16px;
   padding: 20px;
   gap: 12px;
@@ -272,14 +280,158 @@ section {
 
 
 /*! ================Отзывы============== */
-.reviews p,
-.faq p {
-  background: #fff;
-  padding: 15px 20px;
-  border-left: 5px solid #ff4b2b;
-  margin-bottom: 15px;
-  border-radius: 5px;
+
+.reviews-section {
+  padding: 30px 15px;
+  border-radius: 12px;
+  max-width: 100%;
 }
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ff4b2b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-author {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.reviews-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.reviews-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff4b2b;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-card {
+  background: #f8f9fa;
+  padding: 15px 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.review-author {
+  font-weight: 600;
+  color: #ff4b2b;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ! ========================= FAQ ==================== */
+
+.faq-section {
+  padding: 30px 15px;
+  border-radius: 12px;
+}
+
+.faq-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: #3b3b3b;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 15px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  background-color: #555;
+}
+
+.faq-icon {
+  font-size: 1.2rem;
+  color: #ff4b2b;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  transition: max-height 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+  padding: 10px 20px 20px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* ?-========================================================== */
 .order-form {
   background: #fff;
   padding: 30px;
