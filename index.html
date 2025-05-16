@@ -11,7 +11,6 @@
     <!--? ======================== Header ================== -->
 
     <header class="header" id="header">
-      
           <p class="logo">Light <br /><span class="accent">room</span>
           </p>
         <div>
@@ -22,8 +21,7 @@
     <!--? ======================== Hero ================== -->
 
   <main>
-    <section class="hero section">
-    <div class="hero-container hero">
+    <section class="hero container">
       <img
         src="./images/HeroImg.jpg"
         alt="Fazan x Nike"
@@ -34,10 +32,20 @@
         Fazan x Nike — поясна сумка, яка задає темп твого стилю
       </p>
       <a href="#order" class="hero-btn">Замовити зараз</a>
-    </div>
+      <ul class="list sale-container">
+        <li class="sale-item old-price">
+          <span class="crossed">550 грн</span>
+          <p> Стара ціна</p>
+        </li>
+        <li class="sale-item new-price">
+          <span>425 грн</span>
+      <p class="sale"> Лише цього літа</p>
+      </li>
+        
+      </ul>
     </section>
 
-    <!--? ======================== Details ================== -->
+    <!--? =========================== Details ================== -->
 
     <section class="product-details container">
       <h2 class="section-title">Про модель</h2>
@@ -48,12 +56,12 @@
       </p>
 
       <ul class="product-features list">
-        <li class="prod-feature">
+        <li class="prod-feature ">
           Міцна нейлонова тканина з водовідштовхувальним покриттям
         </li>
-        <li class="prod-feature">Фірмовий напис Nike</li>
-        <li class="prod-feature">Регульований ремінь — носи як зручно</li>
-        <li class="prod-feature">Компактна, але містка — все під рукою</li>
+        <li class="prod-feature ">Фірмовий напис Nike</li>
+        <li class="prod-feature ">Регульований ремінь — носи як зручно</li>
+        <li class="prod-feature ">Компактна, але містка — все під рукою</li>
       </ul>
       </section>
     
@@ -94,7 +102,7 @@
 
 <!-- ? ====================== Reviews ============== -->
 
-<section class="reviews-section">
+<section class="reviews-section container">
   <h2 class="reviews-title">Відгуки</h2>
   <div class="reviews">
 
@@ -143,11 +151,11 @@
 
 
 <!-- ? ======================= FAQ =================== -->
- <section class="faq-section">
+<section class="faq-section container">
   <h2 class="faq-title">Часті питання</h2>
-  <div class="faq">
+  <ul class="faq list">
 
-    <div class="faq-item">
+    <li class="faq-item">
       <button class="faq-question">
         Чи підійде для спорту?
         <span class="faq-icon">+</span>
@@ -155,9 +163,9 @@
       <div class="faq-answer">
         Так! Ідеально для активного способу життя.
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
+    <li class="faq-item">
       <button class="faq-question">
         Чи це оригінал Nike?
         <span class="faq-icon">+</span>
@@ -165,42 +173,56 @@
       <div class="faq-answer">
         Це дизайнерське натхнення з брендовим написом.
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
+    <li class="faq-item">
       <button class="faq-question">
         Умови повернення та обміну товару
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-answer">
         <ul>
-          <li><strong>В якому випадку та в які строки можна повернути товар?</strong><br>
+          <li class="conditions"><strong>В якому випадку та в які строки можна повернути товар?</strong><br>
             Якщо товар виявився неналежної якості, ви маєте право повернути його протягом 14 днів з дня покупки.</li>
-          <li><strong>В якому випадку та в які строки можна обміняти товар?</strong><br>
+          <li class="conditions"><strong>В якому випадку та в які строки можна обміняти товар?</strong><br>
             Якщо товар належної якості, але не підійшов розмір, ви маєте право обміняти його протягом 14 днів з дня покупки.</li>
-          <li><strong>Умови повернення/обміну товару належної якості:</strong><br>
+          <li class="conditions"><strong>Умови повернення/обміну товару належної якості:</strong><br>
             Товар належної якості (який відповідає опису на сайті і без дефектів) можна повернути, якщо збереглися товарний вигляд і властивості: оригінальна упаковка, бірки без пошкоджень і відсутність слідів експлуатації. Повернення здійснюється за рахунок покупця через транспортну компанію Нової Пошти.</li>
-          <li><strong>Умови повернення товару неналежної якості:</strong><br>
+          <li class="conditions"><strong>Умови повернення товару неналежної якості:</strong><br>
             Повернення товару неналежної якості можливо в разі наявності дефектів або невідповідності опису на сайті. Повернення можливе протягом 14 днів з моменту покупки при виявленні дефектів на етапі огляду або примірки товару (без експлуатації).</li>
-          <li><strong>Як відправити повернення?</strong><br>
+          <li class="conditions"><strong>Як відправити повернення?</strong><br>
             Упакувати товар, включаючи оригінальну упаковку та бірки. Заповнити заяву на повернення, звернувшись до менеджера. Відправити через Нову Пошту після погодження з менеджером.</li>
-          <li><strong>Повернення коштів:</strong><br>
+          <li class="conditions"><strong>Повернення коштів:</strong><br>
             Кошти повертаються протягом 5 днів після отримання посилки на відділенні Нової Пошти.</li>
         </ul>
       </div>
-    </div>
+    </li>
 
-  </div>
+  </ul>
 </section>
 <!-- ? ================================= Order ========= -->
-      <div id="order" class="order-form">
-        <h2>Оформити замовлення</h2>
-        <p><strong>Ціна: 590 грн</strong></p>
-        <input type="text" placeholder="Ваше ім’я" />
-        <input type="tel" placeholder="Телефон" />
-        <input type="text" placeholder="Місто" />
-        <button>Замовити</button>
-      </div>
+      <section id="order" class="order-form container">
+  <h2 class="section-title">Оформити замовлення</h2>
+  <p><strong>Ціна: 450 грн</strong></p>
+
+  <form>
+    <input type="text" name="name" placeholder="Ваше ім’я" required class="order-input"/>
+    <input type="tel" name="phone" placeholder="Телефон" required class="order-input"/>
+
+    <select class="order-selector" name="color" required>
+      <option value="" disabled selected>Оберіть колір</option>
+      <option value="black">Чорний</option>
+      <option value="blue">Синій</option>
+      <option value="red">Червоний</option>
+      <option value="grey">Сірий</option>
+      <option value="dark-grey">Темно-сірий</option>
+      <option value="camo">Камуфляж</option>
+      <option value="red-logo">Червоний з логотипом</option>
+    </select>
+
+    <button type="submit">Замовити</button>
+  </form>
+</section>
     </main>
     <footer class="footer">
       <p>© 2025 Fazan. Всі права захищені.</p>

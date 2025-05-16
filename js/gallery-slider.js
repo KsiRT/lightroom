@@ -5,27 +5,20 @@ galleryItems.forEach(item => {
   const slides = Array.from(item.querySelectorAll(".slide"));
   const indicatorsContainer = item.querySelector(".indicators");
 
-  let currentIndex = 1; // Начинаем с первого "настоящего" слайда
+  let currentIndex = 1;
   let intervalId;
   let startX = 0;
 
- 
-    // Клонируем слайды
   const firstClone = slides[0].cloneNode(true);
   const lastClone = slides[slides.length - 1].cloneNode(true);
 
-  firstClone.classList.add("clone");
-  lastClone.classList.add("clone");
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, slides[0]);
 
-  track.appendChild(firstClone); // В конец
-  track.insertBefore(lastClone, slides[0]); // В начало
-
-  let allSlides = Array.from(item.querySelectorAll(".slide")); // обновляем список
-
+  const allSlides = item.querySelectorAll(".slide");
 
   track.style.transform = `translateX(-${100 * currentIndex}%)`;
 
-  // Индикаторы
   function createIndicators() {
     indicatorsContainer.innerHTML = "";
     slides.forEach((_, i) => {
@@ -43,8 +36,8 @@ galleryItems.forEach(item => {
     });
   }
 
-  function setSlide(index) {
-    track.style.transition = "transform 0.4s ease-in-out";
+  function setSlide(index, withTransition = true) {
+    track.style.transition = withTransition ? "transform 0.4s ease-in-out" : "none";
     track.style.transform = `translateX(-${100 * index}%)`;
   }
 
@@ -61,32 +54,24 @@ galleryItems.forEach(item => {
   }
 
   function startAutoSlide() {
-    intervalId = setInterval(nextSlide, 2000);
+    intervalId = setInterval(nextSlide, 3000);
   }
 
   function stopAutoSlide() {
     clearInterval(intervalId);
   }
 
-  // Переход после анимации (обработка клонов)
-   track.addEventListener("transitionend", () => {
-    allSlides = Array.from(item.querySelectorAll(".slide")); // обновим на всякий случай
-
-    if (allSlides[currentIndex] && allSlides[currentIndex].isSameNode(firstClone)) {
-      track.style.transition = "none";
+  track.addEventListener("transitionend", () => {
+    if (allSlides[currentIndex]?.isSameNode(firstClone)) {
       currentIndex = 1;
-      track.style.transform = `translateX(-${100 * currentIndex}%)`;
+      setSlide(currentIndex, false);
     }
-
-    if (allSlides[currentIndex] && allSlides[currentIndex].isSameNode(lastClone)) {
-      track.style.transition = "none";
+    if (allSlides[currentIndex]?.isSameNode(lastClone)) {
       currentIndex = slides.length;
-      track.style.transform = `translateX(-${100 * currentIndex}%)`;
+      setSlide(currentIndex, false);
     }
   });
 
-
-  // Свайп
   track.addEventListener("touchstart", e => {
     stopAutoSlide();
     startX = e.touches[0].clientX;
@@ -98,6 +83,19 @@ galleryItems.forEach(item => {
       diff > 0 ? nextSlide() : prevSlide();
     }
     startAutoSlide();
+  });
+
+  // 🧠 Восстановление при возврате во вкладку
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      stopAutoSlide();
+    } else {
+      setSlide(currentIndex, false); // сбрасываем положение
+      setTimeout(() => {
+        track.style.transition = "transform 0.4s ease-in-out";
+      }, 50);
+      startAutoSlide();
+    }
   });
 
   createIndicators();
