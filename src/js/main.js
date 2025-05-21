@@ -1,5 +1,5 @@
-import Toastify from "toastify-js";
-import "toastify-js/src/toastify.css";
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("order-form");
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
           duration: 3000,
           gravity: "top",
           position: "center",
-          backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+          backgroundColor: "#00b09b",
         }).showToast();
         form.reset();
       } else {
