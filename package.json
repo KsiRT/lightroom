@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "popify-js": "^0.1.2",
+    "toastify": "^2.0.1",
+    "toastify-js": "^1.12.0"
   }
 }
