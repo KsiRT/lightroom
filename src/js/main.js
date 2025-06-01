@@ -4,8 +4,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("order-form");
 
-  const BOT_TOKEN = "7974097700:AAEQgAQwvLTCf5ZyjnBen7g5-x6zAjrn7yg"; // замени на свой токен
-  const CHAT_ID = "-4822745570"; // замени на свой chat_id
+  const BOT_TOKEN = ""; //  токен
+  const CHAT_ID = ""; // chat_id
   const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
   form.addEventListener("submit", async (e) => {
