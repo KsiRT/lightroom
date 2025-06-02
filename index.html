@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="./src/images/shopping-bag.svg" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fazan x Nike</title>
+    <title>Light Room</title>
     <link rel="stylesheet" href="/src/css/styles.css" />
 
   </head>
@@ -14,236 +14,188 @@
     <!--? ======================== Header ================== -->
 
     <header class="header" id="header">
-      <p class="logo"> <span class="accent">Light</span> <br />room
-      </p>
-        <div>
-          <h3 class="header-title">Fazan x Nike</h3>
-          <p class="header-text">Твій ритм. твій стиль</p>
-        </div>
+      <p class="logo">Потужний ручний відпарювач</p>
     </header>
     <!--? ======================== Hero ================== -->
 
   <main>
     <section class="hero container">
+     <div class="countdown-wrapper">
+  <div class="countdown-left">
+    <img src="./src/images/clock.svg" alt="Іконка" />
+    <span>Кінець  пропозиції через:</span>
+  </div>
+  <div class="countdown-right">
+    <div class="countdown-labels">
+      <span>годин</span>
+      <span>хвилин</span>
+      <span>секунд</span>
+    </div>
+    <div class="countdown-time">
+      <span id="hours">00</span> :
+      <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+    </div>
+    <div class="countdown-line"></div>
+  </div>
+</div>
+   
+
       <img
-        src="./src/images/HeroImg.png"
-        alt="Fazan x Nike collage"
+        src="./src/images/HeroImg.jpg"
+        alt="Zepline Steamer"
+        loading="lazy"
         class="hero-image"
       />
-      <h1 class="hero-title">Будь у центрі уваги</h1>
-      <p class="hero-text">
-        Fazan x Nike — поясна сумка, яка задає темп твого стилю
+      
+      
+            <div class="benefits-bar">
+  <div class="benefit-item">
+  
+    <img src="./src/images/certificate.svg" alt="Якість" class="benefit-icon">
+    <p>Сертифікати якості</p>
+  </div>
+  <div class="benefit-item">
+    <img src="./src/images/shipping.svg" alt="Доставка" class="benefit-icon">
+    <p>Швидка доставка</p>
+  </div>
+  <div class="benefit-item">
+    <img src="./src/images/cash.svg" alt="Оплата" class="benefit-icon">
+    <p>Оплата при отриманні</p>
+  </div>
+</div>
+<p class="hero-text">
+        Потужний, зручний і стильний відпарювач Zepline — ваш надійний помічник для швидкого догляду за одягом без зусиль.
       </p>
-      <a href="#order" class="hero-btn">Замовити зараз</a>
       <ul class="list sale-container">
-        
         <li class="sale-item new-price-box">
-          <p class="sale"> Ви економите 45%</p>
-          <span class="new-price">300 грн</span>
-      </li>
-
-      <li class="sale-item ">
-        <p class="old-price"> Стара ціна</p>
-          <span class="crossed">550 грн</span>
+          <!-- <p class="new-price">Нова ціна</p> -->
+          <p class="sale">Економія 45%</p>
+          <span class="new-price">899 грн</span>
+        </li>        
+        <li class="sale-item old-price-box">
+          <p class="old-price"> Стара ціна</p>
+          <span class="crossed">1440 грн</span>
         </li>
-        
       </ul>
+
+      <form id="order-form">
+        <input type="text" name="name" placeholder="Ваше ім’я" required class="order-input" />
+        <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+    
+        <select class="order-selector" name="color" required>
+          <option value="" disabled selected>Оберіть колір</option>
+          <option value="blue">Синій </option>
+          <option value="red">Червоний</option>
+          <option value="grey">Сірий</option>
+          <option value="black">Чорний</option>
+        </select>
+    
+        <button type="submit" class="hero-btn">Замовити</button>
+      </form>
+
     </section>
+
+    
 
     <!--? =========================== Details ================== -->
 
-    <section class="product-details container">
-      <h2 class="section-title">Про модель</h2>
+<section class="product-details container">
+      <h2 class="section-title">Вертикальний відпарювач для одягу Zepline</h2>
       <p class="section-text">
-        Ця сумка — не просто аксесуар. Це твій стиль, твій комфорт і твоя
-        свобода. Надійний матеріал, яскравий колір та сучасний вигляд — Fazan x
-        Nike створена, щоб надихати.
+         Відпарювач Zepline ZP-204 — це зручний пристрій для швидкого та якісного прасування без використання громіздкої прасувальної дошки. Завдяки йому можна відпарювати штори та тюль, не знімаючи їх, що значно полегшує догляд за домом. Висока температура пари не лише розгладжує одяг, але й знищує пилових кліщів, бактерії та мікроби, що робить пристрій корисним для обробки м’яких меблів, подушок і дитячих іграшок.
       </p>
+      <p class="section-text">
+         Zepline — це сучасний відпарювач, що поєднує мобільність, потужність і стиль. Відмінне рішення для тих, хто хоче виглядати охайно без зайвого клопоту.
+      </p>
+    </section>
 
-      <ul class="product-features list">
-        <li class="prod-feature ">
-          Міцна нейлонова тканина з водовідштовхувальним покриттям
-        </li>
-        <li class="prod-feature ">Фірмовий напис Nike</li>
-        <li class="prod-feature ">Регульований ремінь — носи як зручно</li>
-        <li class="prod-feature ">Компактна, але містка — все під рукою</li>
-      </ul>
-      </section>
+    
     
     <!--? ======================== Gallery ================== -->
-    <section class="product-gallery container">
+    <section class="product-gallery container ">
   <h2 class="section-title">Галерея</h2>
-  <ul class="gallery">
-  <!--* =============== Перший товар ================== -->
-  <li class="gallery-item">
-    <div class="slider-container">
-      <div class="slider-track">
-        <img src="./src/images/fazan_blue.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_blue1.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_blue2.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_blue3.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_blue4.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/product_.jpg" class="slide" alt="fazan bag"/>
-      </div>
-      <div class="indicators"></div>
-    </div>
-    <p class="gallery-item-name">Синій меланж</p>
-    <p class="gallery-text">Поєднання класики та сучасності. </p>
-  </li>
-
-  <!--* =============== Другий товар ================== -->
-
-  <li class="gallery-item">
-    <div class="slider-container">
-      <div class="slider-track">
-        <img src="./src/images/red_melanj.jpg" class="slide"  alt="fazan bag"/>
-        <img src="./src/images/red_melanj1.jpg" class="slide" alt="fazan bag" />
-        <img src="./src/images/red_melanj2.jpg" class="slide" alt="fazan bag" />
-        <img src="./src/images/red_melanj3.jpg" class="slide" alt="fazan bag" />
-        <img src="./src/images/red_melanj4.jpg" class="slide" alt="fazan bag" />
-        <img src="./src/images/red_melanj5.jpg" class="slide" alt="fazan bag" />
-      </div>
-      <div class="indicators"></div>
-    </div>
-    <p class="gallery-item-name">Червоний меланж</p>
-    <p class="gallery-text"> Незвична кольорова гама, яка привертає увагу.</p>      
-  </li>
   
-  <!--* =============== Третій товар ================== -->
-
-  <li class="gallery-item">
+  <!--* =============== Товар ================== -->
+  <div class="gallery-item">
     <div class="slider-container">
       <div class="slider-track">
-        <img src="./src/images/fazan_red.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_red1.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_red2.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_red3.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/product_.jpg" class="slide" alt="fazan bag"/>
+        <img src="./src/images/black.webp" class="slide" alt="black variant"/>
+        <img src="./src/images/blue.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/red.jpg" class="slide" alt="red variant"/>
+        <img src="./src/images/grey.jpg" class="slide" alt="grey variant"/>
+        
       </div>
       <div class="indicators"></div>
     </div>
-    <p class="gallery-item-name">Червоний</p>
-    <p class="gallery-text">Класичне поєднання червоного та чорного кольорів додає впевненості.</p>
-  </li>
-
-  <!--* =============== Четвертий товар ================== -->
-
-  <li class="gallery-item">
-    <div class="slider-container">
-      <div class="slider-track">
-        <img src="./src/images/fazan_grey.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_grey1.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_grey2.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_grey3.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/product_.jpg" class="slide" alt="fazan bag"/>
-      </div>
-      <div class="indicators"></div>
-    </div>
-    <p class="gallery-item-name">Сірий</p>
-    <p class="gallery-text">Стриманий, але стильний варіант для тих, хто цінує універсальність.</p>
-  </li>
-
-  <!--* =============== П'ятий товар ================== -->
-
-  <li class="gallery-item">
-    <div class="slider-container">
-      <div class="slider-track">
-        <img src="./src/images/fazan_dark_grey.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_dark_grey1.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_dark_grey2.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_dark_grey3.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_dark_grey4.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/product_.jpg" class="slide" alt="fazan bag"/>
-      </div>
-      <div class="indicators"></div>
-    </div>
-    <p class="gallery-item-name">Темно-сірий</p>
-    <p class="gallery-text">Елегантна й практична палітра, яка випромінює впевненість та стриманість.</p>
-  </li>
-
-  <!--* =============== Шостий товар ================== -->
-
-  <li class="gallery-item">
-    <div class="slider-container">
-      <div class="slider-track">
-        <img src="./src/images/fazan_black.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_black1.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_black2.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_black3.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_black4.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/product_.jpg" class="slide" alt="fazan bag"/>
-      </div>
-      <div class="indicators"></div>
-    </div>
-    <p class="gallery-item-name">Чорний</p>
-    <p class="gallery-text">Класика, що ніколи не виходить з моди.</p>
-  </li>
-
-  <!--* =============== Сьомий товар ================== -->
-  <li class="gallery-item">
-    <div class="slider-container">
-      <div class="slider-track">
-        <img src="./src/images/fazan_camo.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_camo1.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/fazan_camo2.jpg" class="slide" alt="fazan bag"/>
-        <img src="./src/images/product_.jpg" class="slide" alt="fazan bag"/>
-      </div>
-      <div class="indicators"></div>
-    </div>
-    <p class="gallery-item-name">Камуфляж</p>
-    <p class="gallery-text">Незвичайне й динамічне рішення для тих, хто хоче виділятись.</p>
-  </li>
-  </ul>
+    <p class="gallery-item-name">Zepline Steamer</p>
+    <p class="gallery-text">Компактний, зручний та ефективний у будь-яких умовах.</p>
+  </div>
 </section>
+
+<!-- ? ====================== Features ============= -->
+
+<section class="product-details container">
+      <h2 class="section-title">Основні особливості:</h2>
+
+      <ul class="product-features list">
+        <li class="prod-feature">Гаряча пара знищує до 99,9% бактерій, що дозволяє рідше прати речі та зменшити потребу в хімчистці.</li>
+        <li class="prod-feature">Ефективне усунення запахів: пара усуває запахи сигарет, їжі та поту.</li>
+        <li class="prod-feature">Місткий резервуар для води: забезпечує тривале використання без частого доливання.</li>
+        <li class="prod-feature">Компактність і зручність: пристрій можна брати з собою в подорож завдяки невеликим розмірам.</li>
+        <li class="prod-feature">Багатофункціональність: відпарювач підходить для обробки одягу з різних тканин — від делікатного шовку до щільної вовни.</li>
+      </ul>
+    </section>
 
 <!-- ? ====================== Reviews ============== -->
 
 <section class="reviews-section container">
-  <h2 class="reviews-title">Відгуки</h2>
+  <h2 class="reviews-title">Відгуки покупців</h2>
   <div class="reviews">
 
     <div class="review-card">
       <div class="review-header">
-        <div class="avatar">О</div>
-        <p class="review-author">Олена, м. Київ</p>
-      </div>
-      <p class="review-text">
-        “Сумка просто супер! Зручна, легка й дуже стильна. Надпис Nike виглядає яскраво, але не надто нав’язливо — саме те, що треба. Ношу щодня: і на прогулянку, і у спортзал. Якість на висоті!”
-      </p>
-    </div>
-
-    <div class="review-card">
-      <div class="review-header">
-        <div class="avatar">М</div>
-        <p class="review-author">Максим, м. Львів</p>
-      </div>
-      <p class="review-text">
-        “Купив собі цю бананку і не пошкодував. Добре сидить на тілі, ремінь регулюється, усі кишеньки зручні. Матеріал міцний, дощ не страшний. Ідеальна сумка для міста!”
-      </p>
-    </div>
-
-    <div class="review-card">
-      <div class="review-header">
         <div class="avatar">І</div>
-        <p class="review-author">Ірина, м. Харків</p>
+        <p class="review-author">Ірина, м. Львів</p>
       </div>
       <p class="review-text">
-        “Замовила сумку для подорожей — ідеальний варіант! Все необхідне поміщається, руки вільні, виглядає стильно. Дуже задоволена покупкою. Тепер мрію ще про таку в іншому кольорі!”
+        “Zepline моя паличка виручалочка! Вранці більше не треба діставати праску. Усього кілька хвилин і сукня готова. Раніше такі речі прасувала вдвічі довше.”
       </p>
     </div>
 
     <div class="review-card">
       <div class="review-header">
-        <div class="avatar">А</div>
-        <p class="review-author">Артем, м. Дніпро</p>
+        <div class="avatar">С</div>
+        <p class="review-author">Сергій, м. Київ</p>
       </div>
       <p class="review-text">
-        “Сумка просто бомба! З Nike виглядає дорого, але ціна приємно здивувала. Ношу щодня — зручна, нічого зайвого. Добре тримається, не ковзає, і тканина якісна. Рекомендую!”
+        “Часто їжджу у відрядження, тому взяв цей відпарювач спеціально для дороги. Дуже легкий, не займає багато місця в сумці. Речі після нього виглядають, як після хімчистки.”
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="avatar">Т</div>
+        <p class="review-author">Тетяна, м. Харків</p>
+      </div>
+      <p class="review-text">
+        “Дуже задоволена покупкою. Відпарювач не підтікає, одяг не мокрий, як це було з дешевими аналогами. Використовую щодня — і сорочки чоловіка, і мої блузки, все як новеньке.”
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="avatar">Д</div>
+        <p class="review-author">Дмитро, м. Одеса</p>
+      </div>
+      <p class="review-text">
+        “Я не фанат прасування, і Zepline реально зручна річ для таких. Натиснув кнопку і через півхвилини можеш прибрати любі складки. Швидко, просто і без мороки.”
       </p>
     </div>
 
   </div>
 </section>
+
 <!-- ? ======================= Delivery ============== -->
  <section class="delivery-section container">
   <h2 class="section-title">Умови доставки</h2>
@@ -257,21 +209,39 @@
 
     <li class="faq-item">
       <button class="faq-question">
-        Чи підійде для спорту?
+        Чи можна брати у подорож?
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-answer">
-        Так! Ідеально для активного способу життя.
+        Так, він легкий і поміщається в ручну поклажу.
       </div>
     </li>
 
     <li class="faq-item">
       <button class="faq-question">
-        Чи це оригінал Nike?
+        Чи безпечний для делікатних тканин?
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-answer">
-        Це дизайнерське натхнення з брендовим написом.
+        Так, має щадний режим для шовку, віскози та інших тонких тканин.
+      </div>
+    </li>
+    <li class="faq-item">
+      <button class="faq-question">
+        Скільки часу потрібно для розігріву?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Всього 25 секунд — і він готовий до використання.
+      </div>
+    </li>
+    <li class="faq-item">
+      <button class="faq-question">
+        Як очистити відпарювач?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Просто промийте резервуар для води та протріть поверхню.
       </div>
     </li>
 
@@ -301,7 +271,7 @@
   </ul>
 </section>
 <!-- ? ================================= Order ========= -->
-      <section id="order" class="order-form container">
+      <!-- <section id="order" class="order-form container">
   <h2 class="section-title">Оформити замовлення</h2>
   <p><strong>Ціна: 300 грн</strong></p>
 
@@ -311,22 +281,21 @@
 
     <select class="order-selector" name="color" required>
       <option value="" disabled selected>Оберіть колір</option>
-      <option value="blue">Синій меланж</option>
-      <option value="red-melanj">Червоний меланж</option>
+      <option value="blue">Синій </option>
       <option value="red">Червоний</option>
       <option value="grey">Сірий</option>
-      <option value="dark-grey">Темно-сірий</option>
       <option value="black">Чорний</option>
-      <option value="camo">Камуфляж</option>
     </select>
 
     <button type="submit" class="hero-btn">Замовити</button>
   </form>
-</section>
-
+</section> -->
+<div class="go-up">
+  <a href="#header" class="go-up-btn"> ^</a>
+</div>
     </main>
     <footer class="footer">
-      <p>© 2025 Fazan. Всі права захищені.</p>
+      <p>© 2025 Zepline. Всі права захищені.</p>
     </footer>
 <script>
 !function(f,b,e,v,n,t,s)
@@ -347,5 +316,6 @@ src="https://www.facebook.com/tr?id=712893991292985&ev=PageView&noscript=1"
     <script src="./src/js/gallery-slider.js" type="module"></script>
     <script src="./src/js/faq.js" type="module"></script>
     <script src="./src/js/main.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
   </body>
 </html>
