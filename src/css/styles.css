@@ -14,7 +14,7 @@
   --bg-hero-gradient-start: #ffe5d8;
   --bg-hero-gradient-end: #fff6ed;
   --bg-slider: #fff1e7;
-  --bg-faq: #fff3ec;
+  --bg-faq: #dbdbdb;
   --bg-footer: #fff1e8;
   --bg-review: #fff8f2;
 
@@ -114,7 +114,7 @@ body {
 .hero {
   color: var(--text-main);
   text-align: center;
-  padding: 10px 20px 40px;
+  padding: 10px 10px 30px;
 }
 .hero-title {
   font-size: 26px;
@@ -270,26 +270,39 @@ opacity: 0.87;
 }
 
 /* Features */
+.product-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+}
 .product-features {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 550px;
 }
 .prod-feature {
   background: var(--bg-feature);
   padding-left: 10px;
   border-left: 4px solid var(--accent);
   border-radius: var(--radius-sm);
-  font-size: var(--fs-sm);
+  font-size: 0.95rem;
 }
 
 /* Gallery */
 .gallery {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
   gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 .gallery-item {
   background: var(--bg-card);
@@ -351,6 +364,9 @@ opacity: 0.87;
   padding: 16px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-light);
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
 }
 .review-header {
   display: flex;
@@ -408,12 +424,17 @@ opacity: 0.87;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: all 0.3s ease;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 550px;
 }
 
 .faq-question {
-  background: none;
+  background: var(--bg-faq);
   border: none;
   width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
   text-align: left;
   padding: 15px 20px;
   font-weight: 600;
@@ -473,7 +494,13 @@ opacity: 0.87;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
+.order-inputs-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+}
 
 .order-input,
 .order-selector {
@@ -482,6 +509,7 @@ opacity: 0.87;
   font-size: var(--fs-md);
   border: 1px solid #8f8f8f;
   border-radius: var(--radius-md);
+  min-width: 250px;
 }
 
 
@@ -501,6 +529,8 @@ opacity: 0.87;
 .order-form button:hover {
   background: var(--accent-dark);
 }
+
+/* Go Up Button */
  .go-up{
   position: fixed;
   bottom: 20px;
@@ -512,6 +542,7 @@ opacity: 0.87;
   box-shadow: var(--shadow-medium);
   cursor: pointer;
   transition: var(--transition);
+  outline: 4px solid var(--accent-dark);
  }
 .go-up-btn{
   margin: 0 auto;

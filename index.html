@@ -40,30 +40,27 @@
   </div>
 </div>
    
-
       <img
         src="./src/images/HeroImg.jpg"
         alt="Zepline Steamer"
         loading="lazy"
         class="hero-image"
       />
-      
-      
-            <div class="benefits-bar">
-  <div class="benefit-item">
-  
-    <img src="./src/images/certificate.svg" alt="Якість" class="benefit-icon">
-    <p>Сертифікати якості</p>
-  </div>
-  <div class="benefit-item">
-    <img src="./src/images/shipping.svg" alt="Доставка" class="benefit-icon">
-    <p>Швидка доставка</p>
-  </div>
-  <div class="benefit-item">
-    <img src="./src/images/cash.svg" alt="Оплата" class="benefit-icon">
-    <p>Оплата при отриманні</p>
-  </div>
-</div>
+
+  <div class="benefits-bar">
+    <div class="benefit-item">
+      <img src="./src/images/certificate.svg" alt="Якість" class="benefit-icon">
+      <p>Сертифікати якості</p>
+    </div>
+    <div class="benefit-item">
+      <img src="./src/images/shipping.svg" alt="Доставка" class="benefit-icon">
+      <p>Швидка доставка</p>
+    </div>
+    <div class="benefit-item">
+      <img src="./src/images/cash.svg" alt="Оплата" class="benefit-icon">
+      <p>Оплата при отриманні</p>
+    </div>
+    </div>
 <p class="hero-text">
         Потужний, зручний і стильний відпарювач Zepline — ваш надійний помічник для швидкого догляду за одягом без зусиль.
       </p>
@@ -75,14 +72,20 @@
         </li>        
         <li class="sale-item old-price-box">
           <p class="old-price"> Стара ціна</p>
-          <span class="crossed">1440 грн</span>
+          <span class="crossed">1640 грн</span>
         </li>
       </ul>
 
-      <form id="order-form">
-        <input type="text" name="name" placeholder="Ваше ім’я" required class="order-input" />
-        <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
-    
+      <form id="order-form" class="order-form">
+        <h2 class="section-title">Оформити замовлення</h2>
+        <div class="order-inputs-container">
+          <img src="./src/images/person.svg" alt="Якість" class="benefit-icon">
+          <input type="text" name="name" placeholder="Ваше ім’я" required class="order-input" />
+        </div>
+        <div class="order-inputs-container">
+          <img src="./src/images/phone.svg" alt="Якість" class="benefit-icon">
+          <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+        </div>
         <select class="order-selector" name="color" required>
           <option value="" disabled selected>Оберіть колір</option>
           <option value="blue">Синій </option>
@@ -113,7 +116,7 @@
     
     
     <!--? ======================== Gallery ================== -->
-    <section class="product-gallery container ">
+    <section class="product-gallery container gallery">
   <h2 class="section-title">Галерея</h2>
   
   <!--* =============== Товар ================== -->
@@ -273,7 +276,7 @@
 <!-- ? ================================= Order ========= -->
       <!-- <section id="order" class="order-form container">
   <h2 class="section-title">Оформити замовлення</h2>
-  <p><strong>Ціна: 300 грн</strong></p>
+  <p><strong>Ціна: 900 грн</strong></p>
 
   <form id="order-form">
     <input type="text" name="name" placeholder="Ваше ім’я" required class="order-input" />
