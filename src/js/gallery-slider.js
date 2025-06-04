@@ -54,7 +54,7 @@ galleryItems.forEach(item => {
   }
 
   function startAutoSlide() {
-    intervalId = setInterval(nextSlide, 3000);
+    intervalId = setInterval(nextSlide, 4000);
   }
 
   function stopAutoSlide() {
