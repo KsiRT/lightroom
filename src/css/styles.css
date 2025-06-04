@@ -550,6 +550,14 @@ align-items: center;
   background: var(--accent-dark);
 }
 
+
+.video-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Go Up Button */
  .go-up{
   position: fixed;
