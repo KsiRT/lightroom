@@ -6,8 +6,9 @@
   --text-dark: #1e1e1e;
   --text-muted: #888;
   --white: #ffffff;
-  --accent: #FC5C04;
-  --accent-dark: #FF9500;
+  --accent: #006eff;
+  --accent-light: #62b0e4;
+  
   --bg-card: #ffffff;
   --bg-sale: #fff2eb;
   --bg-feature: #fff3ea;
@@ -17,6 +18,7 @@
   --bg-faq: #dbdbdb;
   --bg-footer: #fff1e8;
   --bg-review: #fff8f2;
+  
 
   /* Тени и границы */
   --shadow-light: 0 2px 6px rgba(0,0,0,0.04);
@@ -58,13 +60,16 @@ img {
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(var(--bg-upper), var(--bg-lower));
+  background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/sea.webp");
   color: var(--text-main);
   font-size: var(--fs-lg);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Общие классы */
@@ -86,17 +91,18 @@ body {
 .section-title {
   font-size: var(--fs-xxl);
   margin-bottom: 20px;
-  color: var(--accent);
+  color: #181000;
 }
 .section-text {
   font-size: var(--fs-md);
   font-weight: 500;
   margin-bottom: 20px;
+  color: var(--text-dark);
 }
 
 /* Header */
 .header {
-  background: linear-gradient(to right, #FC5C04, #FF9500);
+  background: linear-gradient(to right, #0499fc, #006eff);
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -133,7 +139,7 @@ body {
   margin-bottom: 30px;
 }
 .hero-btn {
-  background: var(--accent-dark);
+  background: var(--accent-light);
   color: black;
   padding: 14px 28px;
   border-radius: var(--radius-pill);
@@ -216,7 +222,8 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(to right, #FC5C04, #FF9500);
+    background: linear-gradient(to left, #0499fc, #006eff);
+
   padding: 10px 12px;
   border-radius: 0 0 20px 20px;
   color: #fff;
@@ -255,6 +262,7 @@ body {
   padding: 12px;
   background: var(--bg-sale);
   border-radius: var(--radius-lg);
+  margin-bottom: 20px;
 }
 .sale-item {
   text-align: center;
@@ -270,7 +278,7 @@ body {
 }
 .sale{
   padding: 0 5px;
-  background: #fc3e04;
+  background: var(--accent-light);
   border-radius: var(--radius-md);
   color: var(--white);
   font-size: 0.88rem;
@@ -286,6 +294,13 @@ opacity: 0.87;
   flex-direction: column;
   justify-content: center;
 align-items: center;
+}
+.product-details-image {
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 550px;
+  border-radius: var(--radius-xl);
+  display: block;
 }
 .product-features {
   display: flex;
@@ -304,6 +319,7 @@ align-items: center;
   border-left: 4px solid var(--accent);
   border-radius: var(--radius-sm);
   font-size: 0.95rem;
+  min-width: 100%;
 }
 
 /* Gallery */
@@ -347,7 +363,7 @@ align-items: center;
 }
 .indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -556,7 +572,7 @@ align-items: center;
   margin: 15px auto;
 }
 .order-form button:hover {
-  background: var(--accent-dark);
+  background: var(--accent-light);
 }
 
 
@@ -565,8 +581,15 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #cccccc;
+  background: var(--accent-light);
+}
 
+.video-player {
+  width: 100%;
+  max-width: 800px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-strong);
+  margin-bottom: 20px;
 }
 
 /* Go Up Button */
@@ -581,7 +604,7 @@ align-items: center;
   box-shadow: var(--shadow-medium);
   cursor: pointer;
   transition: var(--transition);
-  outline: 4px solid var(--accent-dark);
+  outline: 4px solid var(--accent-light);
  }
 .go-up-btn{
   margin: 0 auto;
