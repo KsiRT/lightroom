@@ -60,7 +60,7 @@ img {
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/lamzak/sea.webp");
+  /* background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/lamzak/sea.webp"); */
   color: var(--text-main);
   font-size: var(--fs-lg);
   font-weight: 500;

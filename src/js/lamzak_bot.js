@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const name = form.name.value.trim();
     const phone = form.phone.value.trim();
-    const color = form.color.value;
-    const adress = form.address.value.trim();
+    const address = form.address.value.trim();
 
     if (!name || !phone || !color) {
       Toastify({
@@ -28,11 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const message = `
-🛍 <b>Нове замовлення – Lamzak</b>\n
+🛍 <b>Нове замовлення – Vacuumator</b>\n
 👤 Ім’я: <b>${name}</b>\n
 📞 Телефон: <b>${phone}</b>\n
-🏠 Адреса доставки: <b>${adress}</b>\n
-🎨 Колір: <b>${color}</b>
+🏠 Адреса доставки: <b>${address}</b>\n
     `;
 
     try {
