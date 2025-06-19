@@ -60,7 +60,7 @@ img {
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  /* background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/lamzak/sea.webp"); */
+  background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/lamzak/hero_bg.jpg");
   color: var(--text-main);
   font-size: var(--fs-lg);
   font-weight: 500;
@@ -91,13 +91,21 @@ body {
 .section-title {
   font-size: var(--fs-xxl);
   margin-bottom: 20px;
-  color: #181000;
+  color: #f1f1f1;
+  text-align: center;
 }
 .section-text {
   font-size: var(--fs-md);
   font-weight: 500;
   margin-bottom: 20px;
   color: var(--text-dark);
+}
+.text-accent {
+font-size: calc( 1.56rem + (2.6 - 1.56) * ((100vw - 20rem) / (48 - 20)));
+line-height: calc( 1.4 * (1.56rem + (2.6 - 1.56) * ((100vw - 20rem) / (48 - 20))));
+text-align: center;
+  color: #f1f1f1;
+
 }
 
 /* Header */
@@ -260,7 +268,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 12px;
-  background: var(--bg-sale);
+  background: #fff;
   border-radius: var(--radius-lg);
   margin-bottom: 20px;
 }
@@ -289,6 +297,12 @@ opacity: 0.87;
 }
 
 /* Features */
+.sizing-title{
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+}
 .product-details{
   display: flex;
   flex-direction: column;
@@ -318,7 +332,7 @@ align-items: center;
   padding-left: 10px;
   border-left: 4px solid var(--accent);
   border-radius: var(--radius-sm);
-  font-size: 0.95rem;
+  font-size: 1.095rem;
   min-width: 100%;
 }
 
@@ -436,7 +450,7 @@ align-items: center;
 }
 .delivery-image {
   width: 100%;
-  margin: 0;
+  margin: 0 0 20px;
   max-width: 550px;
   border-radius: var(--radius-xl);
 }
@@ -527,6 +541,11 @@ align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+.order-title{
+    color: #181000;
 
 }
 .order-form p {
