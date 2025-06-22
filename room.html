@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Light Room</title>
-    <link rel="stylesheet" href="/src/css/styles_lamzak.css" />
+    <link rel="stylesheet" href="/src/css/styles_room.css" />
 
   </head>
   <body>
@@ -14,8 +14,7 @@
     <!--? ======================== Header ================== -->
 
     <header class="header" id="header">
-      <p class="logo">ПРОФЕСІЙНИЙ
-ВАКУУМНИЙ ПАКУВАЛЬНИК</p>
+      <p class="logo">Labubu Монстри Pop Mart</p>
     </header>
     <!--? ======================== Hero ================== -->
 
@@ -42,7 +41,7 @@
 </div>
    
       <img
-        src="./src/images/lamzak/hero_vacuum.jpg"
+        src="./src/images/room/Hero_img.jpg"
         alt="Zepline Steamer"
         loading="lazy"
         class="hero-image"
@@ -67,11 +66,11 @@
         <li class="sale-item new-price-box">
           <!-- <p class="new-price">Нова ціна</p> -->
           <p class="sale">Економія 35%</p>
-          <span class="new-price">399 грн</span>
+          <span class="new-price">440 грн</span>
         </li>        
         <li class="sale-item old-price-box">
           <p class="old-price"> Стара ціна</p>
-          <span class="crossed">610 грн</span>
+          <span class="crossed">650 грн</span>
         </li>
       </ul>
 
@@ -88,71 +87,166 @@
         <label for="address"> Адреса доставки</label>
         <div class="order-inputs-container">
         <img src="./src/images/shipping_black.svg" alt="Якість" class="benefit-icon">
-        <input type="text" name="address" id="address" placeholder="Місто, Відділення Нової Пошти" required class="order-input" />
+        <input type="text" name="address" placeholder="Місто, Відділення Нової Пошти" required class="order-input" />
         </div>
         <div class="order-inputs-container">
-          <img src="./src/images/shipping.svg" alt="Якість" class="benefit-icon">
-        
+          <img src="./src/images/room/color-svg.svg" alt="Якість" class="benefit-icon">
+        <select class="order-selector" name="color" required>
+          <option value="" disabled selected>Оберіть колір</option>
+          <option value="blue">Синій </option>
+          <option value="purple">Фіолетовий</option>
+          <option value="pink">Рожевий</option>
+          <option value="green">М’ятний</option>
+          <option value="yellow">Жовтий</option>
+          <option value="brown">Коричневий</option>
+        </select>
         </div>
     
         <button type="submit" class="hero-btn">Замовити</button>
       </form>
 
     </section>
-    <!--? ======================== Video ================== -->
-<section class="video-section container">
-
-  <video controls playsinline muted autoplay style="max-width: 420px; border-radius: 12px;" class="video-player">
-    <source src="./src/images/lamzak/vacuum_sealer.mp4" type="video/mp4">
-    Ваш браузер не поддерживает видео.
-  </video>
-  
-</section>
-
-    <!--? =========================== Details ================== -->
-
-<section class="product-details container">
-      <h2 class="section-title">Vacuum sealer</h2>
-      <img src="./src/images/lamzak/typesOfProducts.jpg" alt="Інструкція" class="delivery-image">
-      <p class="section-text prod-feature">
-         Професійне рішення для домашньої кухні. Зручний та ефективний спосіб приготування вишуканих страв та зберігання продуктів у герметичній упаковці.
-      </p>
-    
-      <p class="section-text text-accent">
-        Приклад зберігання м'яса в холодильнику на 7-й день
-      </p>
-        <img src="./src/images/lamzak/meat_example.jpg" alt="Якість" class=" product-details-image"/>
-      
-    </section>
-
-    
-    
-    <!--? ======================== Gallery ================== -->
-    
-    
-
 <!-- ? ====================== Features ============= -->
 
 <section class="product-details container">
 
-      <h2 class="section-title sizing-title">Подовжить термін зберігання продуктів з вакууматором Vacuum Sealer</h2>
+    
 
-        <img src="./src/images/lamzak/Storage_terms.png" alt="Якість" class=" product-details-image"/>
-        <img src="./src/images/lamzak/sizing.jpg" alt="Якість" class=" product-details-image"/>
-
-
-
-      <h2 class="section-title">Основні можливості:</h2>
+      <h2 class="section-title">Основні параметри:</h2>
 
       <ul class="product-features list">
-        <li class="prod-feature"> Збільшення терміну зберігання продуктів</li>
-        <li class="prod-feature">Бар'єрні властивості для збереження аромату та смаку</li>
-        <li class="prod-feature">Збереження властивостей продуктів під час заморожування</li>
-        <li class="prod-feature">Товарний вид продуктів у вакуумній упаковці</li>
-        <li class="prod-feature">Захист продуктів та товарів у подорожах</li>
-        <li class="prod-feature">Захист документів та грошей у подорожах</li>
+        <li class="prod-feature"> Висота фігурки: 15 см</li>
+        <li class="prod-feature">Унікальний дизайн: детальне розфарбування, що передає характер персонажа</li>
+        <li class="prod-feature">Колекційна цінність: лімітований тираж, що з часом підвищує рідкісність фігурки</li>
+        <li class="prod-feature">Матеріал: міцний, зносостійкий вініл, стійкий до вигорання</li>
+        <li class="prod-feature">Упаковка: закрита коробка-сюрприз з елементом несподіванки</li>
       </ul>
     </section>
+     
+        <!--? ======================== Gallery ================== -->
+
+<section class="product-gallery container gallery">
+  <h2 class="section-title">Галерея</h2>
+  
+  <!--* =============== Перший Товар ================== -->
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/blue.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Блакитний</p>
+    <p class="gallery-text">Блакитний сюрприз із характером. Маленький монстрик, що приносить магію в один момент.</p>
+  </div>
+
+  <!--* =============== Другий Товар ================== -->
+  
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/purple.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Фіолетовий</p>
+    <p class="gallery-text">Фіолетовий малюк-сюрприз із настроєм. Мініатюрний монстрик, що миттєво додає чарівності й характеру.</p>
+  </div>
+
+  <!--* =============== Третій Товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/yellow.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Жовтий</p>
+    <p class="gallery-text">Жовтий вибух настрою. Маленький бешкетник, який приносить яскравість і тепло з першого погляду.</p>
+  </div>
+
+  <!--* =============== Четвертий Товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/pink.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Рожевий</p>
+    <p class="gallery-text">Рожевий сюрприз із душею. Крихітний чарівний монстрик, який одразу оживляє простір і настрій.</p>
+  </div>
+
+  <!--* =============== П’ятий Товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/orange.webp" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Коричневий</p>
+    <p class="gallery-text">Коричневий прихований скарб. Маленький монстрик із теплом і характером, що додає затишку будь-якому простору.</p>
+  </div>
+
+  <!--* =============== Шостий Товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/green.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart М’ятний</p>
+    <p class="gallery-text">М’ятна іскра фантазії. Мінімонстрик, що дарує свіжість, стиль і трохи казки в повсякденність.</p>
+  </div>
+</section>
+
+    
+    
+<!--? =========================== Details ================== -->
+
+<section class="product-details container">
+      <h2 class="section-title">Брелок Лабубу Labubu "Монстри" Pop Mart — трендова плюшева іграшка-сюрприз 15 см Блакитний</h2>
+      <p class="section-text product-details-text">
+        
+         
+
+Labubu — це милий персонаж із серії The Monsters від Pop Mart.
+
+Його унікальний казковий дизайн поєднує елементи фентезі та чарівної естетики.
+
+Колекційна іграшка-сюрприз Labubu The Monsters Art 15 см — це оригінальний вініловий персонаж із лімітованої серії.
+
+Іграшка-сюрприз із серії The Monsters Labubu Art заввишки 15 см — частина авторської колекції, створеної талановитим художником із Гонконгу Кейсінгом Лунгом (Kasing Lung). Його стиль вирізняється поєднанням наївної миловидності з легкою містикою, завдяки чому кожна фігурка здається живою та емоційною.
+
+Labubu — це не просто іграшка, а мініатюрний витвір сучасного мистецтва. Яскравий образ, оригінальні деталі та впізнавана зовнішність із хитрим поглядом і бешкетною усмішкою вже підкорили серця колекціонерів у всьому світі. Цей милий монстрик став справжнім символом арт-дизайну в світі колекційних фігурок.
+
+Упаковка виконана у форматі «сліпої коробки», тож заздалегідь неможливо дізнатися, яка з шести можливих фігурок вам дістанеться — це додає інтриги та перетворює кожну покупку на подію для фанатів бренду The Monsters.
+      </p>
+      <p class="section-text">
+         Zepline — це сучасний відпарювач, що поєднує мобільність, потужність і стиль. Відмінне рішення для тих, хто хоче виглядати охайно без зайвого клопоту.
+      </p>
+    </section>
+    
+
+
 
 <!-- ? ====================== Reviews ============== -->
 
@@ -294,7 +388,7 @@ src="https://www.facebook.com/tr?id=712893991292985&ev=PageView&noscript=1"
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./src/js/gallery-slider.js" type="module"></script>
     <script src="./src/js/faq.js" type="module"></script>
-    <script src="./src/js/light_bot.js" type="module"></script>
+    <script src="./src/js/room_bot.js" type="module"></script>
     <script src="./src/js/timer.js" type="module"></script>
   </body>
 </html>
