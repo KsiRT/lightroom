@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/images/shopping-bag.svg" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Room</title>
+    <link rel="stylesheet" href="/src/css/styles_beauty.css" />
+
+  </head>
+  <body>
+
+    <!--? ======================== Header ================== -->
+
+    <header class="header" id="header">
+      <p class="logo">Косметичка CosmyCase</p>
+    </header>
+    <!--? ======================== Hero ================== -->
+
+  <main>
+    <section class="hero container">
+     <div class="countdown-wrapper">
+  <div class="countdown-left">
+    <img src="./src/images/clock.svg" alt="Іконка" />
+    <span>Кінець  пропозиції через:</span>
+  </div>
+  <div class="countdown-right">
+    <div class="countdown-labels">
+      <span>годин</span>
+      <span>хвилин</span>
+      <span>секунд</span>
+    </div>
+    <div class="countdown-time">
+      <span id="hours">00</span> :
+      <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+    </div>
+    <div class="countdown-line"></div>
+  </div>
+</div>
+   
+      <img
+        src="./src/images/beauty/Hero_img.jpg"
+        alt="Zepline Steamer"
+        loading="lazy"
+        class="hero-image"
+      />
+
+  <div class="benefits-bar">
+    <div class="benefit-item">
+      <img src="./src/images/certificate.svg" alt="Якість" class="benefit-icon">
+      <p>Сертифікати якості</p>
+    </div>
+    <div class="benefit-item">
+      <img src="./src/images/shipping.svg" alt="Доставка" class="benefit-icon">
+      <p>Швидка доставка</p>
+    </div>
+    <div class="benefit-item">
+      <img src="./src/images/cash.svg" alt="Оплата" class="benefit-icon">
+      <p>Оплата при отриманні</p>
+    </div>
+    </div>
+
+      <ul class="list sale-container">
+        <li class="sale-item new-price-box">
+          <!-- <p class="new-price">Нова ціна</p> -->
+          <p class="sale">Економія 35%</p>
+          <span class="new-price">199 грн</span>
+        </li>        
+        <li class="sale-item old-price-box">
+          <p class="old-price"> Стара ціна</p>
+          <span class="crossed">350 грн</span>
+        </li>
+      </ul>
+
+      <form id="order-form" class="order-form">
+        <h2 class="section-title order-title">Оформити замовлення</h2>
+        <div class="order-inputs-container">
+          <img src="./src/images/person.svg" alt="Якість" class="benefit-icon">
+          <input type="text" name="name" placeholder="Ваше Ім’я та Прізвище" required class="order-input" />
+        </div>
+        <div class="order-inputs-container">
+          <img src="./src/images/phone.svg" alt="Якість" class="benefit-icon">
+          <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+        </div>
+        <label for="address"> Адреса доставки</label>
+        <div class="order-inputs-container">
+        <img src="./src/images/shipping_black.svg" alt="Якість" class="benefit-icon">
+        <input type="text" name="address" placeholder="Місто, Відділення Нової Пошти" required class="order-input" />
+        </div>
+        
+    
+        <button type="submit" class="hero-btn">Замовити</button>
+      </form>
+
+    </section>
+<!-- ? ====================== Features ============= -->
+
+<section class="product-details container">
+
+    
+
+      <h2 class="section-title">Основні характеристики:</h2>
+
+      <ul class="product-features list">
+        <li class="prod-feature"> Матеріал: штучна шкіра TPU (зовнішній шар), бавовна (підкладка)</li>
+        <li class="prod-feature">Розміри: 230х110х105 мм</li>
+        <li class="prod-feature">Вага: 0,136 кг</li>
+        <li class="prod-feature">Кількість відділень: 3 великі (одне з блискавкою) + 3 маленькі кишені</li>
+        <li class="prod-feature">Тип застібки: діагональна блискавка</li>
+      </ul>
+    </section>
+     
+        <!--? ======================== Gallery ================== -->
+
+<section class="product-gallery container gallery">
+  <h2 class="section-title">Галерея</h2>
+  
+  <!--* =============== Перший Товар ================== -->
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/beauty/slider_open.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/beauty/slider_girl.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/beauty/slider_promo.jpg" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Косметичка CosmyCase</p>
+    <p class="gallery-text">З CosmyCase ви зможете легко організувати свої косметичні засоби та завжди мати їх під рукою, що неабияк спростить процес підготовки до виходу та зробить його приємнішим. </p>
+  </div>
+
+  <!--* =============== Другий Товар ================== -->
+  
+  
+</section>
+
+    
+    
+<!--? =========================== Details ================== -->
+
+<section class="product-details container">
+      <h2 class="section-title">CosmyCase</h2>
+      <p class="section-text product-details-text">
+        Косметичка з діагональною застібкою CosmyCase — це ідеальний аксесуар для тих, хто цінує стиль і функціональність у догляді за собою. Якщо ви шукаєте надійне та компактне рішення для зберігання косметичних засобів, ця косметичка стане вашим надійним супутником як удома, так і в подорожах.
+      <br>
+      <br>
+        Виготовлена з високоякісної водостійкої штучної шкіри TPU, косметичка CosmyCase захищає ваші б'юті-засоби від вологи та зовнішніх пошкоджень. М'яка бавовняна підкладка дбайливо оберігає вміст від подряпин, що робить її ідеальним вибором для зберігання навіть найделікатніших продуктів.
+      </p>
+      
+    </section>
+    
+
+
+
+<!-- ? ====================== Reviews ============== -->
+
+
+
+<!-- ? ======================= Delivery ============== -->
+ <section class="delivery-section container">
+  <h2 class="section-title">Умови доставки</h2>
+  
+<img src="./src/images/delivery.png" alt="Умови доставки" class="delivery-image" />
+</section>
+<!-- ? ======================= FAQ =================== -->
+<section class="faq-section container">
+  <h2 class="section-title faq-title">Часті питання</h2>
+  <ul class="faq list">
+
+    <li class="faq-item">
+      <button class="faq-question">
+        Чи тримає форма навіть коли порожня?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Так, жорстка конструкція та якісний матеріал забезпечують збереження форми навіть без вмісту — косметичка виглядає акуратно за будь-яких умов.
+      </div>
+    </li>
+<li class="faq-item">
+      <button class="faq-question">
+        Чи зручно відкривати косметичку однією рукою?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Так, завдяки продуманій формі та розміщенню блискавки по діагоналі, косметичку легко відкривати навіть однією рукою — це зручно під час зборів або подорожей.
+      </div>
+    </li>
+    
+    <li class="faq-item">
+      <button class="faq-question">
+        Чи підходить для зберігання доглядової косметики з дозаторами чи помпами?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Так, завдяки високим стінкам і глибокому внутрішньому простору, CosmyCase легко вміщує флакони з дозаторами, не перевертаючи їх.
+      </div>
+    </li>
+    <li class="faq-item">
+      <button class="faq-question">
+        Чи не залишає косметика плям усередині, і як доглядати за внутрішньою частиною?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+       Внутрішня частина має вологостійке покриття, яке легко очищується вологою серветкою — навіть якщо щось пролилося, жодних слідів не залишиться.
+      </div>
+    </li>
+<li class="faq-item">
+      <button class="faq-question">
+        Чи не втрачає колір з часом або під впливом сонця?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Матеріал стійкий до вигоряння й стирання, тому колір залишається насиченим навіть після тривалого використання чи подорожей у сонячні країни.
+      </div>
+    </li>
+
+    <li class="faq-item">
+      <button class="faq-question">
+        Умови повернення та обміну товару
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <ul>
+          <li class="conditions"><strong>В якому випадку та в які строки можна повернути товар?</strong><br>
+            Якщо товар виявився неналежної якості, ви маєте право повернути його протягом 14 днів з дня покупки.</li>
+          <li class="conditions"><strong>В якому випадку та в які строки можна обміняти товар?</strong><br>
+            Якщо товар належної якості, але не підійшов розмір, ви маєте право обміняти його протягом 14 днів з дня покупки.</li>
+          <li class="conditions"><strong>Умови повернення/обміну товару належної якості:</strong><br>
+            Товар належної якості (який відповідає опису на сайті і без дефектів) можна повернути, якщо збереглися товарний вигляд і властивості: оригінальна упаковка, бірки без пошкоджень і відсутність слідів експлуатації. Повернення здійснюється за рахунок покупця через транспортну компанію Нової Пошти.</li>
+          <li class="conditions"><strong>Умови повернення товару неналежної якості:</strong><br>
+            Повернення товару неналежної якості можливо в разі наявності дефектів або невідповідності опису на сайті. Повернення можливе протягом 14 днів з моменту покупки при виявленні дефектів на етапі огляду або примірки товару (без експлуатації).</li>
+          <li class="conditions"><strong>Як відправити повернення?</strong><br>
+            Упакувати товар, включаючи оригінальну упаковку та бірки. Заповнити заяву на повернення, звернувшись до менеджера. Відправити через Нову Пошту після погодження з менеджером.</li>
+          <li class="conditions"><strong>Повернення коштів:</strong><br>
+            Кошти повертаються протягом 5 днів після отримання посилки на відділенні Нової Пошти.</li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+</section>
+<!-- ? ================================= Order ========= -->
+      <!-- <section id="order" class="order-form container">
+  <h2 class="section-title">Оформити замовлення</h2>
+  <p><strong>Ціна: 900 грн</strong></p>
+
+  <form id="order-form">
+    <input type="text" name="name" placeholder="Ваше ім’я" required class="order-input" />
+    <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+
+    <select class="order-selector" name="color" required>
+      <option value="" disabled selected>Оберіть колір</option>
+      <option value="blue">Синій </option>
+      <option value="red">Червоний</option>
+      <option value="grey">Сірий</option>
+      <option value="black">Чорний</option>
+    </select>
+
+    <button type="submit" class="hero-btn">Замовити</button>
+  </form>
+</section> -->
+<div class="go-up">
+  <a href="#header" class="go-up-btn"> ^</a>
+</div>
+    </main>
+    <footer class="footer">
+      <p>© 2025. Всі права захищені.</p>
+    </footer>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '712893991292985');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=712893991292985&ev=PageView&noscript=1"
+/></noscript>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./src/js/gallery-slider.js" type="module"></script>
+    <script src="./src/js/faq.js" type="module"></script>
+    <script src="./src/js/beauty_bot .js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+  </body>
+</html>

@@ -4,9 +4,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("order-form");
 
-  const BOT_TOKEN = ""; //  токен
-  const CHAT_ID = ""; // chat_id
-  const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+    const BOT_TOKEN = "7974097700:AAEQgAQwvLTCf5ZyjnBen7g5-x6zAjrn7yg"; //
+  const CHAT_ID = "-4822745570"; // 
+  const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const name = form.name.value.trim();
     const phone = form.phone.value.trim();
     const color = form.color.value;
+    const adress = form.address.value.trim();
 
     if (!name || !phone || !color) {
       Toastify({
@@ -27,9 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const message = `
-🛍 <b>Нове замовлення</b>\n
+🛍 <b>Нове замовлення – Відпарювач</b>\n
 👤 Ім’я: <b>${name}</b>\n
 📞 Телефон: <b>${phone}</b>\n
+🏠 Адреса доставки: <b>${adress}</b>\n
 🎨 Колір: <b>${color}</b>
     `;
 

@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/images/shopping-bag.svg" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Room</title>
+    <link rel="stylesheet" href="/src/css/styles_room.css" />
+
+  </head>
+  <body>
+
+    <!--? ======================== Header ================== -->
+
+    <header class="header" id="header">
+      <p class="logo">Labubu Монстри Pop Mart</p>
+    </header>
+    <!--? ======================== Hero ================== -->
+
+  <main>
+    <section class="hero container">
+     <div class="countdown-wrapper">
+  <div class="countdown-left">
+    <img src="./src/images/clock.svg" alt="Іконка" />
+    <span>Кінець  пропозиції через:</span>
+  </div>
+  <div class="countdown-right">
+    <div class="countdown-labels">
+      <span>годин</span>
+      <span>хвилин</span>
+      <span>секунд</span>
+    </div>
+    <div class="countdown-time">
+      <span id="hours">00</span> :
+      <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+    </div>
+    <div class="countdown-line"></div>
+  </div>
+</div>
+   
+      <img
+        src="./src/images/room/Hero_img.jpg"
+        alt="Zepline Steamer"
+        loading="lazy"
+        class="hero-image"
+      />
+
+  <div class="benefits-bar">
+    <div class="benefit-item">
+      <img src="./src/images/certificate.svg" alt="Якість" class="benefit-icon">
+      <p>Сертифікати якості</p>
+    </div>
+    <div class="benefit-item">
+      <img src="./src/images/shipping.svg" alt="Доставка" class="benefit-icon">
+      <p>Швидка доставка</p>
+    </div>
+    <div class="benefit-item">
+      <img src="./src/images/cash.svg" alt="Оплата" class="benefit-icon">
+      <p>Оплата при отриманні</p>
+    </div>
+    </div>
+
+      <ul class="list sale-container">
+        <li class="sale-item new-price-box">
+          <!-- <p class="new-price">Нова ціна</p> -->
+          <p class="sale">Економія 35%</p>
+          <span class="new-price">440 грн</span>
+        </li>        
+        <li class="sale-item old-price-box">
+          <p class="old-price"> Стара ціна</p>
+          <span class="crossed">650 грн</span>
+        </li>
+      </ul>
+
+      <form id="order-form" class="order-form">
+        <h2 class="section-title order-title">Оформити замовлення</h2>
+        <div class="order-inputs-container">
+          <img src="./src/images/person.svg" alt="Якість" class="benefit-icon">
+          <input type="text" name="name" placeholder="Ваше Ім’я та Прізвище" required class="order-input" />
+        </div>
+        <div class="order-inputs-container">
+          <img src="./src/images/phone.svg" alt="Якість" class="benefit-icon">
+          <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+        </div>
+        <label for="address"> Адреса доставки</label>
+        <div class="order-inputs-container">
+        <img src="./src/images/shipping_black.svg" alt="Якість" class="benefit-icon">
+        <input type="text" name="address" placeholder="Місто, Відділення Нової Пошти" required class="order-input" />
+        </div>
+        <div class="order-inputs-container">
+          <img src="./src/images/room/color-svg.svg" alt="Якість" class="benefit-icon">
+        <select class="order-selector" name="color" required>
+          <option value="" disabled selected>Оберіть колір</option>
+          <option value="blue">Синій </option>
+          <option value="purple">Фіолетовий</option>
+          <option value="pink">Рожевий</option>
+          <option value="green">М’ятний</option>
+          <option value="yellow">Жовтий</option>
+          <option value="brown">Коричневий</option>
+        </select>
+        </div>
+    
+        <button type="submit" class="hero-btn">Замовити</button>
+      </form>
+
+    </section>
+<!-- ? ====================== Features ============= -->
+
+<section class="product-details container">
+
+    
+
+      <h2 class="section-title">Основні параметри:</h2>
+
+      <ul class="product-features list">
+        <li class="prod-feature"> Висота фігурки: 15 см</li>
+        <li class="prod-feature">Унікальний дизайн: детальне розфарбування, що передає характер персонажа</li>
+        <li class="prod-feature">Колекційна цінність: лімітований тираж, що з часом підвищує рідкісність фігурки</li>
+        <li class="prod-feature">Матеріал: міцний, зносостійкий вініл, стійкий до вигорання</li>
+        <li class="prod-feature">Упаковка: закрита коробка-сюрприз з елементом несподіванки</li>
+      </ul>
+    </section>
+     
+        <!--? ======================== Gallery ================== -->
+
+<section class="product-gallery container gallery">
+  <h2 class="section-title">Галерея</h2>
+  
+  <!--* =============== Перший Товар ================== -->
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/blue.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Блакитний</p>
+    <p class="gallery-text">Блакитний сюрприз із характером. Маленький монстрик, що приносить магію в один момент.</p>
+  </div>
+
+  <!--* =============== Другий Товар ================== -->
+  
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/purple.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Фіолетовий</p>
+    <p class="gallery-text">Фіолетовий малюк-сюрприз із настроєм. Мініатюрний монстрик, що миттєво додає чарівності й характеру.</p>
+  </div>
+
+  <!--* =============== Третій Товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/yellow.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Жовтий</p>
+    <p class="gallery-text">Жовтий вибух настрою. Маленький бешкетник, який приносить яскравість і тепло з першого погляду.</p>
+  </div>
+
+  <!--* =============== Четвертий Товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/pink.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Рожевий</p>
+    <p class="gallery-text">Рожевий сюрприз із душею. Крихітний чарівний монстрик, який одразу оживляє простір і настрій.</p>
+  </div>
+
+  <!--* =============== П’ятий Товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/orange.webp" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart Коричневий</p>
+    <p class="gallery-text">Коричневий прихований скарб. Маленький монстрик із теплом і характером, що додає затишку будь-якому простору.</p>
+  </div>
+
+  <!--* =============== Шостий Товар ================== -->
+
+  <div class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/room/green.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/room/Hero_img.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/room/Hero_img2.webp" class="slide" alt="red variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <p class="gallery-item-name">Labubu Pop Mart М’ятний</p>
+    <p class="gallery-text">М’ятна іскра фантазії. Мінімонстрик, що дарує свіжість, стиль і трохи казки в повсякденність.</p>
+  </div>
+</section>
+
+    
+    
+<!--? =========================== Details ================== -->
+
+<section class="product-details container">
+      <h2 class="section-title">Брелок Лабубу Labubu "Монстри" Pop Mart — трендова плюшева іграшка-сюрприз 15 см Блакитний</h2>
+      <p class="section-text product-details-text">
+        
+         
+
+Labubu — це милий персонаж із серії The Monsters від Pop Mart.
+
+Його унікальний казковий дизайн поєднує елементи фентезі та чарівної естетики.
+
+Колекційна іграшка-сюрприз Labubu The Monsters Art 15 см — це оригінальний вініловий персонаж із лімітованої серії.
+
+Іграшка-сюрприз із серії The Monsters Labubu Art заввишки 15 см — частина авторської колекції, створеної талановитим художником із Гонконгу Кейсінгом Лунгом (Kasing Lung). Його стиль вирізняється поєднанням наївної миловидності з легкою містикою, завдяки чому кожна фігурка здається живою та емоційною.
+
+Labubu — це не просто іграшка, а мініатюрний витвір сучасного мистецтва. Яскравий образ, оригінальні деталі та впізнавана зовнішність із хитрим поглядом і бешкетною усмішкою вже підкорили серця колекціонерів у всьому світі. Цей милий монстрик став справжнім символом арт-дизайну в світі колекційних фігурок.
+
+Упаковка виконана у форматі «сліпої коробки», тож заздалегідь неможливо дізнатися, яка з шести можливих фігурок вам дістанеться — це додає інтриги та перетворює кожну покупку на подію для фанатів бренду The Monsters.
+      </p>
+      
+    </section>
+    
+
+
+
+<!-- ? ====================== Reviews ============== -->
+
+<!-- <section class="reviews-section container">
+  <h2 class="section-title">Відгуки покупців</h2>
+  <div class="gallery-item review-card">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/lamzak/review_1.JPG" class="slide" alt="black variant"/>
+        <img src="./src/images/lamzak/review_2.JPG" class="slide" alt="blue variant"/>
+        <img src="./src/images/lamzak/review_3.JPG" class="slide" alt="red variant"/>
+        <img src="./src/images/lamzak/review_4.jpg" class="slide" alt="grey variant"/>
+        
+      </div>
+      <div class="indicators"></div>
+    </div>
+    
+  </div>
+  
+</section> -->
+
+<!-- ? ======================= Delivery ============== -->
+ <section class="delivery-section container">
+  <h2 class="section-title">Умови доставки</h2>
+  
+<img src="./src/images/delivery.png" alt="Умови доставки" class="delivery-image" />
+</section>
+<!-- ? ======================= FAQ =================== -->
+<section class="faq-section container">
+  <h2 class="section-title faq-title">Часті питання</h2>
+  <ul class="faq list">
+
+    <li class="faq-item">
+      <button class="faq-question">
+        Чи підходить ця фігурка як подарунок, якщо не знаєш, який персонаж усередині?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Так, фішка в тому, що це "сліпа коробка" — елемент сюрпризу додає інтриги, і це саме те, що подобається фанатам. Такий подарунок — завжди несподіваний та емоційний.
+      </div>
+    </li>
+<li class="faq-item">
+      <button class="faq-question">
+        Чим ця фігурка відрізняється від підробок на маркетплейсах?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Оригінальна Labubu має якісний друк, чіткі деталі, щільну коробку з брендингом Pop Mart і спеціальні маркування. Підробки зазвичай виглядають грубо та втрачають "харизму" персонажа.
+      </div>
+    </li>
+    
+    <li class="faq-item">
+      <button class="faq-question">
+        Чи можна цю іграшку використовувати як декор для фото або інтер’єру?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Так! Labubu чудово виглядає в кадрі завдяки яскравому образу та деталям. Часто використовується в flat lay знімках, на полицях і навіть у тематичних кафе як арт-декор.
+      </div>
+    </li>
+    <li class="faq-item">
+      <button class="faq-question">
+        Наскільки обмежений тираж — чи є шанс, що фігурка стане раритетом?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        ак, Pop Mart випускає обмежені серії, і деякі Labubu вже стали колекційною рідкістю. З часом їх складніше знайти, а ціна на вторинному ринку зростає.
+      </div>
+    </li>
+<li class="faq-item">
+      <button class="faq-question">
+        Чи має Labubu якусь "історію" чи бекграунд, окрім зовнішності?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Так, автор Kasing Lung створив для персонажа цілий всесвіт з міфологією. Labubu — не просто монстрик, а створіння з казковим минулим, що живе у світі з власними законами та друзями-монстрами. Це додає глибини кожній фігурці.
+      </div>
+    </li>
+
+    <li class="faq-item">
+      <button class="faq-question">
+        Умови повернення та обміну товару
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <ul>
+          <li class="conditions"><strong>В якому випадку та в які строки можна повернути товар?</strong><br>
+            Якщо товар виявився неналежної якості, ви маєте право повернути його протягом 14 днів з дня покупки.</li>
+          <li class="conditions"><strong>В якому випадку та в які строки можна обміняти товар?</strong><br>
+            Якщо товар належної якості, але не підійшов розмір, ви маєте право обміняти його протягом 14 днів з дня покупки.</li>
+          <li class="conditions"><strong>Умови повернення/обміну товару належної якості:</strong><br>
+            Товар належної якості (який відповідає опису на сайті і без дефектів) можна повернути, якщо збереглися товарний вигляд і властивості: оригінальна упаковка, бірки без пошкоджень і відсутність слідів експлуатації. Повернення здійснюється за рахунок покупця через транспортну компанію Нової Пошти.</li>
+          <li class="conditions"><strong>Умови повернення товару неналежної якості:</strong><br>
+            Повернення товару неналежної якості можливо в разі наявності дефектів або невідповідності опису на сайті. Повернення можливе протягом 14 днів з моменту покупки при виявленні дефектів на етапі огляду або примірки товару (без експлуатації).</li>
+          <li class="conditions"><strong>Як відправити повернення?</strong><br>
+            Упакувати товар, включаючи оригінальну упаковку та бірки. Заповнити заяву на повернення, звернувшись до менеджера. Відправити через Нову Пошту після погодження з менеджером.</li>
+          <li class="conditions"><strong>Повернення коштів:</strong><br>
+            Кошти повертаються протягом 5 днів після отримання посилки на відділенні Нової Пошти.</li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+</section>
+<!-- ? ================================= Order ========= -->
+      <!-- <section id="order" class="order-form container">
+  <h2 class="section-title">Оформити замовлення</h2>
+  <p><strong>Ціна: 900 грн</strong></p>
+
+  <form id="order-form">
+    <input type="text" name="name" placeholder="Ваше ім’я" required class="order-input" />
+    <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+
+    <select class="order-selector" name="color" required>
+      <option value="" disabled selected>Оберіть колір</option>
+      <option value="blue">Синій </option>
+      <option value="red">Червоний</option>
+      <option value="grey">Сірий</option>
+      <option value="black">Чорний</option>
+    </select>
+
+    <button type="submit" class="hero-btn">Замовити</button>
+  </form>
+</section> -->
+<div class="go-up">
+  <a href="#header" class="go-up-btn"> ^</a>
+</div>
+    </main>
+    <footer class="footer">
+      <p>© 2025. Всі права захищені.</p>
+    </footer>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '712893991292985');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=712893991292985&ev=PageView&noscript=1"
+/></noscript>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./src/js/gallery-slider.js" type="module"></script>
+    <script src="./src/js/faq.js" type="module"></script>
+    <script src="./src/js/room_bot.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+  </body>
+</html>
