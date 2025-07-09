@@ -6,12 +6,12 @@
   --text-dark: #1e1e1e;
   --text-muted: #888;
   --white: #ffffff;
-  --accent: #006eff;
-  --accent-light: #62b0e4;
+  --accent: #9D3c51;
+  --accent-light: #9f7c8c;
   
   --bg-card: #ffffff;
   --bg-sale: #fff2eb;
-  --bg-feature: #fff3ea;
+  --bg-feature: #ddbbc5;
   --bg-hero-gradient-start: #ffe5d8;
   --bg-hero-gradient-end: #fff6ed;
   --bg-slider: #fff1e7;
@@ -60,7 +60,7 @@ img {
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/lamzak/hero_bg.jpg");
+  background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/kitchen/hero_bg.jpeg");
   color: var(--text-main);
   font-size: var(--fs-lg);
   font-weight: 500;
@@ -110,7 +110,7 @@ text-align: center;
 
 /* Header */
 .header {
-  background: linear-gradient(to right, #0499fc, #006eff);
+  background: linear-gradient(to right, var(--accent), var(--accent-light));
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -168,9 +168,9 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background: linear-gradient(to left, #CD9C93, #F0C3A5);
+
   padding: 12px 16px;
-  border: 1px solid #ddd;
   border-radius: 8px 8px 0 0;
   font-family: Arial, sans-serif;
   max-width: 600px;
@@ -230,7 +230,7 @@ text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-    background: linear-gradient(to left, #0499fc, #006eff);
+  background: linear-gradient(to right, var(--accent), var(--accent-light));
 
   padding: 10px 12px;
   border-radius: 0 0 20px 20px;
@@ -635,7 +635,8 @@ align-items: center;
 
 /* Footer */
 .footer {
-   background: linear-gradient(to right, #0499fc, #006eff);
+    background: linear-gradient(to right, var(--accent), var(--accent-light));
+
   color: #ffffff;
   text-align: center;
   padding: 20px;
