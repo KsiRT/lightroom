@@ -59,7 +59,10 @@ img {
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/room/Background.jpg");
+  background-image:linear-gradient(rgba(170, 173, 228, 0.3), rgba(46, 47, 66, 0.3)), url("/src/images/proektor/bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   color: var(--text-main);
   font-size: var(--fs-lg);
   font-weight: 500;

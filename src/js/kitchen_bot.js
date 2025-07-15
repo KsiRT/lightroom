@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const name = form.name.value.trim();
     const phone = form.phone.value.trim();
+    const color = form.color.value;
     const address = form.address.value.trim();
 
-    if (!name || !phone ||  !address) {
+    if (!name || !phone || !color || !address) {
       Toastify({
         text: "Будь ласка, заповніть усі поля!",
         duration: 3000,
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 👤 Ім’я: <b>${name}</b>\n
 📞 Телефон: <b>${phone}</b>\n
 🏠 Адреса доставки: <b>${address}</b>\n
+🎨 Колір: <b>${color}</b>
     `;
 
     try {
