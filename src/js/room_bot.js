@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 👤 Ім’я: <b>${name}</b>\n
 📞 Телефон: <b>${phone}</b>\n
 🏠 Адреса доставки: <b>${address}</b>\n
-🎨 Колір: <b>${color}</b>
     `;
 
     try {
