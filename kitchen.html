@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/images/shopping-bag.svg" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Room</title>
+    <link rel="stylesheet" href="/src/css/styles_kitchen.css" />
+
+  </head>
+  <body>
+
+    <!--? ======================== Header ================== -->
+
+    <header class="header" id="header">
+      <p class="logo">Портативний USB-блендер</p>
+    </header>
+    <!--? ======================== Hero ================== -->
+
+  <main>
+    <section class="hero container">
+     <div class="countdown-wrapper">
+  <div class="countdown-left">
+    <img src="./src/images/clock.svg" alt="Іконка" />
+    <span>Кінець  пропозиції через:</span>
+  </div>
+  <div class="countdown-right">
+    <div class="countdown-labels">
+      <span>годин</span>
+      <span>хвилин</span>
+      <span>секунд</span>
+    </div>
+    <div class="countdown-time">
+      <span id="hours">00</span> :
+      <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+    </div>
+    <div class="countdown-line"></div>
+  </div>
+</div>
+   
+      <img
+        src="./src/images/kitchen/hero.webp"
+        alt="Zepline Steamer"
+        loading="lazy"
+        class="hero-image"
+      />
+
+  <div class="benefits-bar">
+    <div class="benefit-item">
+      <img src="./src/images/certificate.svg" alt="Якість" class="benefit-icon">
+      <p>Сертифікати якості</p>
+    </div>
+    <div class="benefit-item">
+      <img src="./src/images/shipping.svg" alt="Доставка" class="benefit-icon">
+      <p>Швидка доставка</p>
+    </div>
+    <div class="benefit-item">
+      <img src="./src/images/cash.svg" alt="Оплата" class="benefit-icon">
+      <p>Оплата при отриманні</p>
+    </div>
+    </div>
+
+      <ul class="list sale-container">
+        <li class="sale-item new-price-box">
+          <!-- <p class="new-price">Нова ціна</p> -->
+          <p class="sale">Економія 50%</p>
+          <span class="new-price">399 грн</span>
+        </li>        
+        <li class="sale-item old-price-box">
+          <p class="old-price"> Стара ціна</p>
+          <span class="crossed">800 грн</span>
+        </li>
+      </ul>
+
+      <form id="order-form" class="order-form">
+        <h2 class="section-title order-title">Оформити замовлення</h2>
+        <div class="order-inputs-container">
+          <img src="./src/images/person.svg" alt="Якість" class="benefit-icon">
+          <input type="text" name="name" placeholder="Ваше Ім’я та Прізвище" required class="order-input" />
+        </div>
+        <div class="order-inputs-container">
+          <img src="./src/images/phone.svg" alt="Якість" class="benefit-icon">
+          <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+        </div>
+        <label for="address"> Адреса доставки</label>
+        <div class="order-inputs-container">
+        <img src="./src/images/shipping_black.svg" alt="Якість" class="benefit-icon">
+        <input type="text" name="address" id="address" placeholder="Місто, Відділення Нової Пошти" required class="order-input" />
+        </div>
+        <div class="order-inputs-container">
+          <img src="./src/images/shipping.svg" alt="Якість" class="benefit-icon">
+        <select class="order-selector" name="color" required>
+          <option value="" disabled selected>Оберіть колір</option>
+          <option value="white">Білий </option>
+          <option value="grey">Сірий</option>
+          <option value="black">Чорний</option>
+        </select>
+        </div>
+    
+        <button type="submit" class="hero-btn">Замовити</button>
+      </form>
+
+    </section>
+    
+
+    <!--? =========================== Details ================== -->
+
+<section class="product-details container">
+      <h2 class="section-title">Портативний USB-блендер 12 лез, 3 швидкості – здоров'я та свіжість завжди поряд!</h2>
+      <img src="./src/images/kitchen/slider2.webp" alt="Інструкція" class="delivery-image">
+      <p class="section-text prod-feature">
+         Відкрий собі зручність та користь у компактному форматі з нашим портативним USB-блендером! Ідеальний помічник для активних людей, які дбають про здоров'я та хочуть мати можливість готувати свіжі напої у будь-якому місці – на роботі, у спортзалі, у поїздці чи просто вдома.
+      </p>
+    
+      
+      
+    </section>
+
+    
+    
+    <!--? ======================== Gallery ================== -->
+   <!--? ======================== Video ================== -->
+<section class="video-section container">
+
+  <video controls playsinline  width="100%" style="max-width: 420px; border-radius: 12px;" class="video-player" autoplay muted loop>
+    <source src="./src/images/kitchen/vid.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+  </video>
+</section>
+<!-- ? ====================== Features ============= -->
+
+<section class="product-details container">
+
+      <h2 class="section-title ">Завдяки компактності та потужності він відмінно підходить для приготування:</h2>
+
+        <p class="section-text prod-feature">
+         Свіжих фруктових та овочевих смузі 🍎🥬<br>
+Молочних коктейлів і протеїнових напоїв🥛<br>
+Фрешей та натуральних соків 🥕🍊<br>
+Дитячого харчування та пюре 👶<br>
+Охолодженних напоїв з льодом ❄️<br>
+      </p>
+
+
+
+      <h2 class="section-title">Основні переваги:</h2>
+
+      <ul class="product-features list">
+        <li class="prod-feature"> Портативність та мобільність – легкий та компактний, поміщається у рюкзак чи сумку, не займає багато місця.</li>
+        <li class="prod-feature">Живлення від USB - заряджайте блендер від ноутбука, павербанка, автомобільного адаптера або будь-якого другого USB-порту. Кабель для заряджання йде в комплекті.
+        <img src="./src/images/kitchen/charger.webp" alt="Інструкція" class="delivery-image"></li>
+        
+        <li class="prod-feature">Потужні леза – стійкі до зношування, легко подрібнюють фрукти, овочі, ягоди, лід та навіть горіхи.</li>
+        <li class="prod-feature">Зручна кришка з ручкою – можна брати блендер як пляшку, носити із собою та пити прямо з нього.</li>
+        <li class="prod-feature">Об'єм до 500 мл – оптимальний для однієї порції смузи чи коктейлю.
+<img src="./src/images/kitchen/sizing.webp" alt="Інструкція" class="delivery-image">
+
+        </li>
+        <li class="prod-feature">Просте миття – чашу та леза легко промити під проточною водою, швидко підготувати до наступного використання.
+</li>
+      </ul>
+    </section>
+
+<!-- ? ====================== Reviews ============== -->
+
+
+
+<!-- ? ======================= Delivery ============== -->
+ <section class="delivery-section container">
+  <h2 class="section-title">Умови доставки</h2>
+  
+<img src="./src/images/delivery.png" alt="Умови доставки" class="delivery-image" />
+</section>
+<!-- ? ======================= FAQ =================== -->
+<section class="faq-section container">
+  <h2 class="section-title faq-title">Часті питання</h2>
+  <ul class="faq list">
+
+    <li class="faq-item">
+      <button class="faq-question">
+        Чи витримує він приготування смузі з заморожених фруктів?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Так, але краще різати заморожені фрукти на менші шматочки — моторчик потужний, проте для довгої служби варто уникати надмірного навантаження.
+      </div>
+    </li>
+<li class="faq-item">
+      <button class="faq-question">
+        Чи можна мити блендер у посудомийній машині?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Ні, електронну частину мити в посудомийці не можна. Kолбу можна промити вручну.
+      </div>
+    </li>
+    
+    <li class="faq-item">
+      <button class="faq-question">
+        Чи залишається смак напоїв, якщо змішувати різні інгредієнти?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Ні, колба не вбирає запахи, але після приготування краще одразу сполоснути чашу, щоб уникнути залишкового аромату.
+      </div>
+    </li>
+    <li class="faq-item">
+      <button class="faq-question">
+       Чи працює він без води чи рідини?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Не рекомендується запускати його на «суху» — для збереження моторчика обов’язково додавайте трохи рідини.
+      </div>
+    </li>
+
+
+    <li class="faq-item">
+      <button class="faq-question">
+        Умови повернення та обміну товару
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <ul>
+          <li class="conditions"><strong>В якому випадку та в які строки можна повернути товар?</strong><br>
+            Якщо товар виявився неналежної якості, ви маєте право повернути його протягом 14 днів з дня покупки.</li>
+          <li class="conditions"><strong>В якому випадку та в які строки можна обміняти товар?</strong><br>
+            Якщо товар належної якості, але не підійшов розмір, ви маєте право обміняти його протягом 14 днів з дня покупки.</li>
+          <li class="conditions"><strong>Умови повернення/обміну товару належної якості:</strong><br>
+            Товар належної якості (який відповідає опису на сайті і без дефектів) можна повернути, якщо збереглися товарний вигляд і властивості: оригінальна упаковка, бірки без пошкоджень і відсутність слідів експлуатації. Повернення здійснюється за рахунок покупця через транспортну компанію Нової Пошти.</li>
+          <li class="conditions"><strong>Умови повернення товару неналежної якості:</strong><br>
+            Повернення товару неналежної якості можливо в разі наявності дефектів або невідповідності опису на сайті. Повернення можливе протягом 14 днів з моменту покупки при виявленні дефектів на етапі огляду або примірки товару (без експлуатації).</li>
+          <li class="conditions"><strong>Як відправити повернення?</strong><br>
+            Упакувати товар, включаючи оригінальну упаковку та бірки. Заповнити заяву на повернення, звернувшись до менеджера. Відправити через Нову Пошту після погодження з менеджером.</li>
+          <li class="conditions"><strong>Повернення коштів:</strong><br>
+            Кошти повертаються протягом 5 днів після отримання посилки на відділенні Нової Пошти.</li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+</section>
+
+<div class="go-up">
+  <a href="#header" class="go-up-btn"> ^</a>
+</div>
+    </main>
+    <footer class="footer">
+      <p>© 2025. Всі права захищені.</p>
+    </footer>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '712893991292985');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=712893991292985&ev=PageView&noscript=1"
+/></noscript>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./src/js/gallery-slider.js" type="module"></script>
+    <script src="./src/js/faq.js" type="module"></script>
+    <script src="./src/js/kitchen_bot.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+  </body>
+</html>
